@@ -73,7 +73,7 @@ export default function AnastamarDentalClinicHomepage() {
 
   return (
     <div className="min-h-screen bg-[#111111] text-[#222]">
-      <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top,#1ba99c_0%,#0f7f76_28%,#141414_75%)]">
+      <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_28%,#141414_75%)]">
         <div className="absolute inset-0 bg-black/35" />
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -83,7 +83,7 @@ export default function AnastamarDentalClinicHomepage() {
           }}
         />
 
-        <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#06a59a] px-6 py-4 text-white shadow-2xl mt-5 w-[94%]">
+        <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#0f9c90] px-6 py-4 text-white shadow-2xl mt-5 w-[94%]">
           <div>
             <div className="text-3xl font-black tracking-tight leading-none">
               ANASTAMAR
@@ -92,7 +92,7 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
 
           <nav className="hidden items-center gap-8 text-sm font-medium lg:flex">
-            <a href="#" className="rounded-full bg-[#ffd24d] px-5 py-2 text-black">Home</a>
+            <a href="#" className="rounded-full bg-[#5fe2d6] px-5 py-2 text-[#083a36]">Home</a>
             <a href="#services">Services</a>
             <a href="#why-us">Why Us</a>
             <a href="#gallery">Gallery</a>
@@ -101,13 +101,13 @@ export default function AnastamarDentalClinicHomepage() {
 
           <div className="flex items-center gap-3 text-sm">
             <div className="grid h-8 w-8 place-items-center rounded-full bg-white/15">ig</div>
-            <div className="grid h-8 w-8 place-items-center rounded-full bg-[#ff6a95]">☎</div>
+            <div className="grid h-8 w-8 place-items-center rounded-full bg-[#2ec4b6]">☎</div>
           </div>
         </header>
 
         <section className="relative z-10 mx-auto flex min-h-[640px] max-w-6xl flex-col justify-center px-6 pb-16 pt-20 text-white">
           <div className="max-w-3xl">
-            <p className="mb-4 text-lg font-medium text-[#ffd24d]">Premium Smile Design & Implant Solutions</p>
+            <p className="mb-4 text-lg font-medium text-[#7af3e8]">Premium Smile Design & Implant Solutions</p>
             <h1 className="text-5xl font-black leading-tight md:text-7xl">
               From Consultation to Perfection
               <br />
@@ -121,14 +121,14 @@ export default function AnastamarDentalClinicHomepage() {
           <div id="contact" className="mt-12 rounded-[28px] bg-white/92 p-4 shadow-2xl backdrop-blur md:p-5">
             <div className="grid gap-3 md:grid-cols-[1fr_1fr_220px]">
               <input
-                className="h-14 rounded-full border border-[#d6ece8] bg-[#0ea89e] px-6 text-white placeholder:text-white/85 outline-none"
+                className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
                 placeholder="Enter your full name"
               />
               <input
-                className="h-14 rounded-full border border-[#d6ece8] bg-[#0ea89e] px-6 text-white placeholder:text-white/85 outline-none"
+                className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
                 placeholder="Enter your phone number"
               />
-              <button className="h-14 rounded-full bg-[#f5c73d] px-6 font-bold text-[#1b1b1b] transition hover:scale-[1.01]">
+              <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36] transition hover:scale-[1.01]">
                 Submit Now
               </button>
             </div>
@@ -166,7 +166,7 @@ export default function AnastamarDentalClinicHomepage() {
               </div>
             </div>
 
-            <button className="mt-8 font-semibold text-[#0d9d92]">Learn More</button>
+            <button className="mt-8 font-semibold text-[#109f93]">Learn More</button>
           </div>
 
           <div className="relative min-h-[520px] bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)]">
@@ -178,7 +178,7 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-8 overflow-hidden rounded-[28px] bg-[#0b8f85] px-8 py-12 text-white shadow-xl md:px-14">
+        <section className="mt-8 overflow-hidden rounded-[28px] bg-[#0d9f93] px-8 py-12 text-white shadow-xl md:px-14">
           <div className="text-center">
             <h3 className="text-4xl font-black">Innovation & Precision In Every Implant</h3>
             <p className="mt-2 text-white/85">We use only implants, high quality implants designed for long term durability.</p>
@@ -306,7 +306,7 @@ export default function AnastamarDentalClinicHomepage() {
               </div>
             </div>
             <div className="rounded-[24px] border border-[#e9e9e9] p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-[#0d9d92]">Anastamar Dental Clinic</div>
+              <div className="text-sm uppercase tracking-[0.2em] text-[#109f93]">Anastamar Dental Clinic</div>
               <div className="mt-4 text-[15px] leading-7 text-[#666]">
                 International patient focused, premium smile design and implant treatments in Istanbul.
               </div>
@@ -318,14 +318,14 @@ export default function AnastamarDentalClinicHomepage() {
           <div className="text-center text-2xl font-semibold text-[#222]">Fill it out to get your free consultation</div>
           <div className="mt-4 grid gap-3 md:grid-cols-[1fr_1fr_220px]">
             <input
-              className="h-14 rounded-full border border-[#d6ece8] bg-[#0ea89e] px-6 text-white placeholder:text-white/85 outline-none"
+              className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
               placeholder="Enter your full name"
             />
             <input
-              className="h-14 rounded-full border border-[#d6ece8] bg-[#0ea89e] px-6 text-white placeholder:text-white/85 outline-none"
+              className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
               placeholder="Enter your phone number"
             />
-            <button className="h-14 rounded-full bg-[#f5c73d] px-6 font-bold text-[#1b1b1b]">Submit Now</button>
+            <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36]">Submit Now</button>
           </div>
         </section>
 
@@ -340,7 +340,7 @@ export default function AnastamarDentalClinicHomepage() {
               <details key={faq} className="group rounded-2xl border border-[#d8ebe7] px-5 py-4">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-[#333]">
                   <span>{faq}</span>
-                  <span className="text-2xl text-[#0d9d92] transition group-open:rotate-45">+</span>
+                  <span className="text-2xl text-[#109f93] transition group-open:rotate-45">+</span>
                 </summary>
                 <p className="pt-4 text-[15px] leading-7 text-[#666]">
                   At Anastamar Dental Clinic, every treatment is planned individually after consultation. Our team explains the most suitable treatment route, estimated timeline and aftercare details clearly before starting.
@@ -350,13 +350,13 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
 
           <div className="mt-8 text-center">
-            <button className="rounded-full bg-[#f5c73d] px-6 py-3 text-sm font-semibold text-[#222]">Read More FAQs</button>
+            <button className="rounded-full bg-[#5fe2d6] px-6 py-3 text-sm font-semibold text-[#083a36]">Read More FAQs</button>
           </div>
         </section>
       </main>
 
       <footer className="mx-auto mb-8 max-w-6xl px-4 md:px-6">
-        <div className="rounded-[28px] bg-[#0a756e] px-8 py-10 text-white shadow-2xl md:px-12">
+        <div className="rounded-[28px] bg-[#0b8b80] px-8 py-10 text-white shadow-2xl md:px-12">
           <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr_0.8fr]">
             <div>
               <div className="text-3xl font-black leading-none">ANASTAMAR</div>
