@@ -41,16 +41,43 @@ export default function AnastamarDentalClinicHomepage() {
 
   const testimonials = [
     {
-      name: 'Bendansoune Larbi',
-      text: 'For my first visit, I was well received. The clinic team made everything smooth and comfortable from consultation to treatment. I left with much more confidence in my smile.',
+      name: 'R.',
+      country: 'United States',
+      flag: '🇺🇸',
+      text: 'I’m an American, so here ya go. This facility is state of the art, clean, and perfectly organized. The team cared about my comfort through every stage, and the whole procedure felt smooth and reassuring.',
     },
     {
-      name: 'Aurim',
-      text: 'Excellent organization, friendly staff and a very clean clinic. Anastamar Dental Clinic explained every step clearly and the final smile design looks amazing.',
+      name: 'John',
+      country: 'United Kingdom',
+      flag: '🇬🇧',
+      text: 'I was worried before arriving, but from airport transfer to treatment day, everything was managed professionally. Clear communication, kind staff, and a stress-free process made this one of the best healthcare experiences I’ve had.',
     },
     {
-      name: 'Marta K.',
-      text: 'I came for implants and was impressed by the planning, professionalism and aftercare. The whole experience felt premium and reassuring.',
+      name: 'Zain',
+      country: 'United Kingdom',
+      flag: '🇬🇧',
+      text: 'From hotel to clinic service, every part was planned in detail. The staff were warm and highly skilled, and the final result made the journey absolutely worth it.',
+    },
+  ];
+
+  const blogPosts = [
+    {
+      date: '10 Apr 2026',
+      title: 'Non-Surgical Alternatives to Hair Transplant: PRP, Medications, and More',
+      excerpt: 'In our daily practice at the hospital, we meet two types of patients. The first group is...',
+      image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      date: '10 Apr 2026',
+      title: 'PRP vs Stem Cell Therapy for Hair Loss: Which Non-Surgical Option Is Better?',
+      excerpt: 'Hair loss is a progressive condition that affects not only your appearance but also...',
+      image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      date: '10 Apr 2026',
+      title: 'Lupus and alopecia: is there a treatment?',
+      excerpt: 'Managing the daily challenges of an autoimmune condition like lupus is...',
+      image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80',
     },
   ];
 
@@ -283,49 +310,115 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
-          <div className="text-center">
-            <h3 className="text-5xl font-black text-[#222]">Discover What Our Patients Are Saying</h3>
-            <p className="mt-2 text-xl text-[#666]">Happy Patients, Beautiful Smiles.</p>
+        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <h3 className="text-5xl font-black text-[#171b21]">Testimonials</h3>
+            <p className="mt-3 text-xl text-[#4a5765]">
+              Find out how Anastamar Dental Clinic has helped people boost their confidence and smile happily.
+            </p>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-[280px_1fr_280px]">
-            <div className="rounded-[24px] border border-[#e9e9e9] p-6">
-              <div className="text-[#7a7a7a]">Google Logo</div>
-              <div className="mt-6 text-2xl font-black text-[#222]">4.8/5.0 stars based on</div>
-              <div className="mt-2 text-[#666]">1701 reviews</div>
-            </div>
-            <div className="rounded-[24px] border border-[#e9e9e9] p-6">
-              <div className="space-y-5">
-                {testimonials.map((item) => (
-                  <div key={item.name} className="rounded-[18px] bg-[#fafafa] p-4">
-                    <p className="text-[15px] leading-7 text-[#444]">“{item.text}”</p>
-                    <div className="mt-3 font-semibold text-[#222]">{item.name}</div>
-                  </div>
-                ))}
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {testimonials.map((item) => (
+              <article key={item.name} className="rounded-[30px] bg-[#d5edf5] p-7">
+                <p className="text-[20px] leading-9 text-[#1f2a37]">{item.text}</p>
+                <div className="mt-8 font-bold text-[#1c2430]">{item.name}</div>
+                <div className="mt-1 flex items-center gap-2 text-lg text-[#445260]">
+                  <span>{item.flag}</span>
+                  <span>{item.country}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-3 md:grid-cols-3">
+            {[
+              { source: 'Google', score: '4.9', reviews: '4317 Reviews' },
+              { source: 'Trustpilot', score: '4.9', reviews: '6408 Reviews' },
+              { source: 'Yandex', score: '5.0', reviews: '251 Reviews' },
+              { source: 'Facebook', score: '5.0', reviews: '61 Reviews' },
+              { source: 'YouTube', score: '4.96K', reviews: '1000 videos' },
+            ].map((rating) => (
+              <div key={rating.source} className="rounded-2xl bg-white px-4 py-3 text-center shadow-sm">
+                <div className="text-sm text-[#677689]">{rating.source}</div>
+                <div className="text-2xl font-black text-[#1f2937]">{rating.score}</div>
+                <div className="text-sm text-[#566272]">{rating.reviews}</div>
               </div>
-            </div>
-            <div className="rounded-[24px] border border-[#e9e9e9] p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-[#109f93]">Anastamar Dental Clinic</div>
-              <div className="mt-4 text-[15px] leading-7 text-[#666]">
-                International patient focused, premium smile design and implant treatments in Istanbul.
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-white p-4 shadow-xl md:p-5">
-          <div className="text-center text-2xl font-semibold text-[#222]">Fill it out to get your free consultation</div>
-          <div className="mt-4 grid gap-3 md:grid-cols-[1fr_1fr_220px]">
-            <input
-              className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
-              placeholder="Enter your full name"
+        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <h3 className="text-5xl font-black text-[#171b21]">Blog</h3>
+            <p className="mt-3 text-xl text-[#4a5765]">
+              Stay informed with our insightful blog: your resource for latest medical news and healthcare management tips.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {blogPosts.map((post) => (
+              <article key={post.title} className="overflow-hidden rounded-[28px] bg-[#d8e8ef]">
+                <img src={post.image} alt={post.title} className="h-72 w-full object-cover" />
+                <div className="p-6">
+                  <div className="text-[30px] leading-none text-[#84ddf2]">―</div>
+                  <div className="text-lg text-[#556575]">{post.date}</div>
+                  <h4 className="mt-3 text-[44px] font-black leading-[1.02] text-[#101820]">{post.title}</h4>
+                  <p className="mt-4 text-[26px] leading-10 text-[#4b5968]">{post.excerpt}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10 overflow-hidden rounded-[28px] bg-[#d5edf5] shadow-xl md:grid md:grid-cols-[1.08fr_0.92fr]">
+          <div className="p-8 md:p-12">
+            <h3 className="text-6xl font-black leading-none text-[#111827]">Contact Us</h3>
+            <p className="mt-6 max-w-xl text-[32px] leading-[1.25] text-[#182433]">
+              Begin the journey to improving your self-esteem. Contact us today and let&apos;s discuss how we can help you.
+            </p>
+
+            <div className="mt-8 space-y-4">
+              <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Name" />
+              <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Email" />
+              <select className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none">
+                <option>Türkiye</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+              </select>
+              <div className="grid grid-cols-[110px_1fr] overflow-hidden rounded-2xl border border-[#c8d9df] bg-[#f4f7f9]">
+                <div className="grid place-items-center border-r border-[#c8d9df] text-[#111827]">🇹🇷 +90</div>
+                <input className="h-14 bg-transparent px-5 text-[#111827] outline-none" placeholder="0501 234 56 78" />
+              </div>
+              <select className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#8da0b5] outline-none">
+                <option>Select Service</option>
+                <option>Hollywood Smile</option>
+                <option>Implant</option>
+              </select>
+              <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] text-2xl font-bold text-[#0b2440]">
+                Submit
+              </button>
+            </div>
+
+            <div className="mt-8 flex items-center gap-5 text-[#607286]">
+              <span className="h-px flex-1 bg-[#bdd4dd]" />
+              <span className="text-sm">or reach us through</span>
+              <span className="h-px flex-1 bg-[#bdd4dd]" />
+            </div>
+            <div className="mt-5 flex gap-3">
+              <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">📞</button>
+              <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">✉️</button>
+              <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">🟢</button>
+            </div>
+          </div>
+
+          <div className="relative min-h-[520px]">
+            <img
+              src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80"
+              alt="Contact representative"
+              className="h-full w-full object-cover"
             />
-            <input
-              className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
-              placeholder="Enter your phone number"
-            />
-            <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36]">Submit Now</button>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#d5edf5]/5 to-transparent" />
           </div>
         </section>
 
