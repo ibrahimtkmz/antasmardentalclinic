@@ -1,4 +1,67 @@
 export default function AnastamarDentalClinicHomepage() {
+  const journeyDays = [
+    {
+      day: 'Gün 1',
+      items: [
+        {
+          title: 'Havaalanı Karşılama',
+          detail: 'Ekibimiz sizi havaalanında karşılar ve kliniğe güvenli transferinizi sağlar.',
+          time: '1 saat',
+        },
+        {
+          title: 'İlk Muayene & 3D Tarama',
+          detail: 'Ağız içi tarama, panoramik görüntüleme ve tedavi planlaması tamamlanır.',
+          time: '1-2 saat',
+        },
+      ],
+    },
+    {
+      day: 'Gün 2',
+      items: [
+        {
+          title: 'Hazırlık ve Lokal Anestezi',
+          detail: 'İmplant, kaplama veya gülüş tasarımı için hazırlık aşaması uzman ekip tarafından yapılır.',
+          time: '1 saat',
+        },
+        {
+          title: 'Ana Diş İşlemi',
+          detail: 'Planlanan dental işlem hijyenik ve konfor odaklı klinik ortamında uygulanır.',
+          time: '3-5 saat',
+        },
+      ],
+    },
+    {
+      day: 'Gün 3',
+      items: [
+        {
+          title: 'Kontrol ve Prova',
+          detail: 'İyileşme süreci kontrol edilir, gerekiyorsa geçici/prova diş uygulamaları yapılır.',
+          time: '1-2 saat',
+        },
+        {
+          title: 'Boş Zaman',
+          detail: 'Günlük rahatlama ve şehir deneyimi için planınıza uygun serbest zaman bırakılır.',
+          time: 'Opsiyonel',
+        },
+      ],
+    },
+    {
+      day: 'Gün 4',
+      items: [
+        {
+          title: 'Son Kontrol & Bakım Bilgilendirmesi',
+          detail: 'Ağız bakımı, beslenme önerileri ve süreç takibi için net yönlendirme verilir.',
+          time: '1 saat',
+        },
+        {
+          title: 'Havaalanı Transferi',
+          detail: 'Konaklamanızdan havaalanına transfer planlı şekilde tamamlanır.',
+          time: '1 saat',
+        },
+      ],
+    },
+  ];
+
   const services = [
     { title: 'Hollywood Smile', image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80' },
     { title: 'Dental Implant', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80' },
@@ -23,17 +86,17 @@ export default function AnastamarDentalClinicHomepage() {
 
   const doctors = [
     {
-      name: 'Dr. Abdurrahman Salih Coşkun',
+      name: 'Doktor Bey',
       role: 'Cosmetic Dentist',
       image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80',
     },
     {
-      name: 'Dr. Gökşin Rumane',
+      name: 'Doktor Bey',
       role: 'Cosmetic Dentist',
       image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80',
     },
     {
-      name: 'Dr. Cavlan Kutlu',
+      name: 'Doktor Bey',
       role: 'Surgical Dentist',
       image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80',
     },
@@ -60,27 +123,6 @@ export default function AnastamarDentalClinicHomepage() {
     },
   ];
 
-  const blogPosts = [
-    {
-      date: '10 Apr 2026',
-      title: 'Non-Surgical Alternatives to Hair Transplant: PRP, Medications, and More',
-      excerpt: 'In our daily practice at the hospital, we meet two types of patients. The first group is...',
-      image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80',
-    },
-    {
-      date: '10 Apr 2026',
-      title: 'PRP vs Stem Cell Therapy for Hair Loss: Which Non-Surgical Option Is Better?',
-      excerpt: 'Hair loss is a progressive condition that affects not only your appearance but also...',
-      image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80',
-    },
-    {
-      date: '10 Apr 2026',
-      title: 'Lupus and alopecia: is there a treatment?',
-      excerpt: 'Managing the daily challenges of an autoimmune condition like lupus is...',
-      image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80',
-    },
-  ];
-
   const faqs = [
     'Does Anastamar Dental Clinic offer warranty on dental implants?',
     'How can I book an appointment at Anastamar Dental Clinic?',
@@ -99,7 +141,7 @@ export default function AnastamarDentalClinicHomepage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#111111] text-[#222]">
+    <div className="sharp-theme min-h-screen bg-[#111111] text-[#222]">
       <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_28%,#141414_75%)]">
         <div className="absolute inset-0 bg-black/35" />
         <div
@@ -350,24 +392,34 @@ export default function AnastamarDentalClinicHomepage() {
 
         <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
           <div className="mx-auto max-w-3xl text-center">
-            <h3 className="text-5xl font-black text-[#171b21]">Blog</h3>
+            <h3 className="text-5xl font-black text-[#171b21]">4 Günlük Dental Tedavi Yolculuğu</h3>
             <p className="mt-3 text-xl text-[#4a5765]">
-              Stay informed with our insightful blog: your resource for latest medical news and healthcare management tips.
+              Tasarımı dental işlemlere uyarladık: planlama, işlem, kontrol ve transfer adımlarını net şekilde görebilirsiniz.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {blogPosts.map((post) => (
-              <article key={post.title} className="overflow-hidden rounded-[28px] bg-[#d8e8ef]">
-                <img src={post.image} alt={post.title} className="h-72 w-full object-cover" />
-                <div className="p-6">
-                  <div className="text-[30px] leading-none text-[#84ddf2]">―</div>
-                  <div className="text-lg text-[#556575]">{post.date}</div>
-                  <h4 className="mt-3 text-[44px] font-black leading-[1.02] text-[#101820]">{post.title}</h4>
-                  <p className="mt-4 text-[26px] leading-10 text-[#4b5968]">{post.excerpt}</p>
+          <div className="mt-10 grid gap-5 md:grid-cols-4">
+            {journeyDays.map((day) => (
+              <article key={day.day} className="border border-[#c7e6ef] bg-[#d8e8ef] p-5">
+                <div className="border-b border-[#bddae3] pb-3 text-xl font-black text-[#123]">{day.day}</div>
+                <div className="mt-4 space-y-3">
+                  {day.items.map((item) => (
+                    <div key={item.title} className="border border-[#b6d8e2] bg-[#c5e0e8] p-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <h4 className="text-lg font-bold leading-tight text-[#101820]">{item.title}</h4>
+                        <span className="bg-[#7fd2eb] px-2 py-1 text-xs font-semibold text-[#0d2f3d]">{item.time}</span>
+                      </div>
+                      <p className="mt-2 text-sm leading-6 text-[#334155]">{item.detail}</p>
+                    </div>
+                  ))}
                 </div>
               </article>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <button className="bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] px-8 py-3 text-base font-bold text-[#0b2440]">
+              Randevu Oluştur
+            </button>
           </div>
         </section>
 

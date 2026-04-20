@@ -11,3 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.sharp-theme :is(section, article, header, footer, button, input, select, textarea, details, summary, img, a, div) {
+  border-radius: 8px !important;
+}
