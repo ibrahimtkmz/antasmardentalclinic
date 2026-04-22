@@ -21,17 +21,15 @@ export default function Footer() {
       <div className="page-shell px-6 py-16 md:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] items-start">
           
-          {/* Logo ve İletişim Kolonu */}
-<div className="flex flex-col pt-2">
-  {/* Kapsayıcı boyutları da 3 katına yaklaştırıldı (450px - 660px) */}
-  <div className="relative h-[450px] sm:h-[660px]">
-    <img
-      src="/logo-beyaz.png"
-      alt="Anastamar Dental Clinic Logo"
-      /* h- değerleri 3 katına çıkarıldı: 190*3=570, 220*3=660 */
-      className="absolute left-[-12px] top-[-34px] h-[270px] w-auto max-w-none object-contain pointer-events-none sm:h-[360px]"
-    />
-  </div>
+         {/* Logo ve İletişim Kolonu */}
+          <div className="flex flex-col pt-2">
+            <div className="relative h-[130px] sm:h-[150px]">
+              <img
+                src="/logo-beyaz.png"
+                alt="Anastamar Dental Clinic Logo"
+                className="absolute left-[-12px] top-[-34px] h-[190px] w-auto max-w-none object-contain pointer-events-none sm:h-[220px]"
+              />
+            </div>
 
             <p className="mt-2 max-w-md text-lg leading-relaxed text-[#9ec8c4] md:text-[21px]">
               Our patients who want to get an offer from abroad can get a quick response via WhatsApp.
