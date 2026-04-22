@@ -68,14 +68,14 @@ export default function AnastamarDentalClinicHomepage() {
   const services = [
     {
       title: 'Hollywood Smile',
-      href: '/hollywood-smile',
+      href: '/treatments/hollywood-smile',
       image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80',
     },
-    { title: 'Dental Implant', href: '/#services', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Veneers', href: '/#services', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Dental Crowns', href: '/#services', image: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Dental Bone Graft', href: '/#services', image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Sinus Lift', href: '/#services', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Dental Implant', href: '/treatments/dental-implant', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Veneers', href: '/treatments/veneers', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Dental Crowns', href: '/treatments/dental-crowns', image: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Dental Bone Graft', href: '/treatments/dental-bone-graft', image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Sinus Lift', href: '/treatments/sinus-lift', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80' },
   ];
 
   const gallery = [

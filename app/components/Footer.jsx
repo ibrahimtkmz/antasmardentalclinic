@@ -1,4 +1,9 @@
-const quickLinks = ['Home', 'About Us', 'Contact Us'];
+const quickLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about-us' },
+  { label: 'Treatments', href: '/treatments' },
+  { label: 'Contact Us', href: '/contact' },
+];
 const services = [
   'Dental Implants Turkey',
   'Laminate Veneers Turkey',
@@ -78,7 +83,9 @@ export default function Footer() {
             <div className="mt-4 h-1 w-24 rounded bg-[#5fe2d6]" />
             <ul className="mt-8 space-y-5 text-base md:text-[22px]">
               {quickLinks.map((item) => (
-                <li key={item}>› {item}</li>
+                <li key={item.label}>
+                  <a href={item.href}>› {item.label}</a>
+                </li>
               ))}
             </ul>
           </div>

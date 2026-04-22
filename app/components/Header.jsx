@@ -12,25 +12,25 @@ export default function Header() {
 
         <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] lg:text-base">
           <a href="/" className="transition hover:text-[#16b3a7]">Home</a>
-          <a href="/#why-us" className="transition hover:text-[#16b3a7]">About Us</a>
+          <a href="/about-us" className="transition hover:text-[#16b3a7]">About Us</a>
 
           <div className="group relative">
-            <a href="/#services" className="transition hover:text-[#16b3a7]">Treatments +</a>
+            <a href="/treatments" className="transition hover:text-[#16b3a7]">Treatments +</a>
             <div className="invisible absolute left-1/2 top-full z-30 mt-3 w-52 -translate-x-1/2 rounded-2xl border border-[#d8efec] bg-white p-2 opacity-0 shadow-lg transition duration-200 group-hover:visible group-hover:opacity-100">
-              <a href="/hollywood-smile" className="block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+              <a href="/treatments/hollywood-smile" className="block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
                 Hollywood Smile
               </a>
-              <a href="/#services" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+              <a href="/treatments/dental-implant" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
                 Dental Implant
               </a>
-              <a href="/#services" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+              <a href="/treatments/veneers" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
                 Veneers
               </a>
             </div>
           </div>
 
-          <a href="/#doctors" className="transition hover:text-[#16b3a7]">Doctors +</a>
-          <a href="/#contact" className="transition hover:text-[#16b3a7]">Contact</a>
+          <a href="/doctors" className="transition hover:text-[#16b3a7]">Doctors +</a>
+          <a href="/contact" className="transition hover:text-[#16b3a7]">Contact</a>
         </nav>
 
         <div className="flex justify-center md:justify-end">
