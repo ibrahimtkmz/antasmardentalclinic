@@ -63,7 +63,7 @@ export default function Footer() {
               <img
                 src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="h-24 w-auto object-contain sm:h-48"
+                className="h-44 w-auto object-contain sm:h-58"
               />
             </div>
 
