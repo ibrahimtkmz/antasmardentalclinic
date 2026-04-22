@@ -1,7 +1,7 @@
 export default function Header() {
   return (
  <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-  <div className="grid items-center gap-5 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
+  <div className="grid items-center gap-5 px-1 py-0.5 md:grid-cols-[auto_1fr_auto] md:px-6">
     
     {/* Beyaz arka plan ve gölge kaldırıldı, sadece logonun kendisi kaldı */}
     <a href="#" className="inline-flex items-center justify-center">
