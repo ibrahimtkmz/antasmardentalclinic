@@ -341,6 +341,41 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
+        <section className="relative mt-10 overflow-hidden rounded-[28px] shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=80"
+            alt="Happy patient smiling"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#5f4a65]/75" />
+
+          <div className="relative grid gap-10 px-6 py-12 text-white md:grid-cols-2 md:px-12 md:py-16">
+            <div className="flex items-center">
+              <h3 className="text-4xl font-light leading-tight md:text-6xl">
+                Short Term Campaign for
+                <br />
+                <span className="font-bold text-[#c8ff2f]">Periodontics</span> Treatments
+              </h3>
+            </div>
+
+            <div>
+              <h4 className="max-w-xl text-4xl font-light leading-tight md:text-6xl">
+                <span className="font-medium text-[#c8ff2f]">Unmissable Opportunities</span> for Health and Aesthetics in Your Smile!
+              </h4>
+              <p className="mt-8 max-w-2xl text-lg leading-9 text-white/90">
+                Now is the perfect time for a healthy and confident smile. With special campaign opportunities in dental aesthetics, implants and periodontics, you can complete your treatment with expert care and comfort.
+              </p>
+              <a
+                href="#contact"
+                className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-8 py-4 text-3xl font-semibold text-[#1d2f45] transition hover:translate-y-[-1px]"
+              >
+                Contact Us
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
           <div className="mx-auto max-w-3xl text-center">
             <h3 className="text-5xl font-black text-[#171b21]">Testimonials</h3>
