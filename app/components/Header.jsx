@@ -1,6 +1,6 @@
 export default function Header() {
   return (
- <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-white/20 bg-[#041112] shadow-[0_14px_36px_rgba(0,0,0,0.45)]">
+ <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
   <div className="grid items-center gap-5 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
     
     {/* Beyaz arka plan ve gölge kaldırıldı, sadece logonun kendisi kaldı */}
@@ -13,12 +13,12 @@ export default function Header() {
       />
     </a>
 
-        <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-wide text-white/90 lg:text-base">
-          <a href="#" className="transition hover:text-[#5fe2d6]">Home</a>
-          <a href="#why-us" className="transition hover:text-[#5fe2d6]">About Us</a>
-          <a href="#services" className="transition hover:text-[#5fe2d6]">Treatments +</a>
-          <a href="#doctors" className="transition hover:text-[#5fe2d6]">Doctors +</a>
-          <a href="#contact" className="transition hover:text-[#5fe2d6]">Contact</a>
+        <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] lg:text-base">
+          <a href="#" className="transition hover:text-[#16b3a7]">Home</a>
+          <a href="#why-us" className="transition hover:text-[#16b3a7]">About Us</a>
+          <a href="#services" className="transition hover:text-[#16b3a7]">Treatments +</a>
+          <a href="#doctors" className="transition hover:text-[#16b3a7]">Doctors +</a>
+          <a href="#contact" className="transition hover:text-[#16b3a7]">Contact</a>
         </nav>
 
         <div className="flex justify-center md:justify-end">
