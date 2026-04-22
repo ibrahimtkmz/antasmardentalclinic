@@ -6,7 +6,7 @@ export default function Header() {
           <img
             src="/Anastamar.Dental.Clinic.png"
             alt="Anastamar Dental Clinic Logo"
-            className="h-14 w-auto object-contain sm:h-16 md:h-20"
+            className="h-14 w-auto object-contain sm:h-19 md:h-25"
           />
         </a>
 
