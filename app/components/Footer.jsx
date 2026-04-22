@@ -32,7 +32,6 @@ export default function Footer() {
       className="absolute left-[-12px] top-[-34px] h-[570px] w-auto max-w-none object-contain pointer-events-none sm:h-[660px]"
     />
   </div>
-</div>
 
             <p className="mt-2 max-w-md text-lg leading-relaxed text-[#9ec8c4] md:text-[21px]">
               Our patients who want to get an offer from abroad can get a quick response via WhatsApp.
