@@ -144,7 +144,7 @@ export default function AnastamarDentalClinicHomepage() {
   ];
 
   return (
-    <div className="sharp-theme home-logo-pattern min-h-screen bg-[#111111] text-[#222]">
+    <div className="sharp-theme min-h-screen bg-[#111111] text-[#222]">
       <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_28%,#141414_75%)]">
         <div className="absolute inset-0 bg-black/35" />
         <div
