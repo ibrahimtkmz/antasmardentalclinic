@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
       {/* py-2 yaparak beyaz şeridi daralttık */}
-      <div className="grid items-center gap-5 px-5 py-1 md:grid-cols-[250px_1fr_250px] md:px-6">
+      <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_250px] md:px-6">
         
         {/* Logo Alanı: Relative kapsayıcı içinde Absolute logo */}
         <div className="relative flex h-12 items-center justify-center md:justify-start">
