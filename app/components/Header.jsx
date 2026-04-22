@@ -1,16 +1,15 @@
 export default function Header() {
   return (
-<header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-  {/* py-0.5'i py-0 yaparak dikeydeki tüm ekstra boşluğu sıfırladık */}
+<header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)] overflow-hidden">
   <div className="grid items-center gap-5 px-1 py-0 md:grid-cols-[auto_1fr_auto] md:px-6">
     
-    <a href="#" className="inline-flex items-center justify-center">
+    <a href="#" className="flex items-center justify-center p-0"> 
       <img
         src="/Anastamar.Dental.Clinic.png"
         alt="Anastamar Dental Clinic Logo"
-        /* h-60 mobil için çok büyük olabilir, h-24 genellikle idealdir. 
-           md:h-32 ise masaüstünde logoyu oldukça belirgin yapar. */
-        className="h-24 w-auto object-contain md:h-32" 
+        /* h-48 (192px) veya h-56 (224px) gibi değerler logoyu header'ı kaplayacak kadar büyütür */
+        className="h-40 w-auto object-contain md:h-48 block" 
+        style={{ display: 'block' }} // Alt kısımdaki minik boşluğu öldürmek için
       />
     </a>
 
