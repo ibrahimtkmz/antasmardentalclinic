@@ -55,17 +55,18 @@ const collageItems = [
 
 export default function Footer() {
   return (
-    <footer className="mt-10 border-t border-white/10 bg-[#031416] footer-hex-pattern text-[#9cc9c5]">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
-          <div>
-            <div className="inline-flex items-center">
-              <img
-                src="/logo-beyaz.png"
-                alt="Anastamar Dental Clinic Logo"
-                className="h-44 w-auto object-contain sm:h-58"
-              />
-            </div>
+  <footer className="mt-10 border-t border-white/10 bg-[#031416] footer-hex-pattern text-[#9cc9c5]">
+  <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
+    <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
+      <div>
+        <div className="inline-flex items-center">
+          <img
+            src="/logo-beyaz.png"
+            alt="Anastamar Dental Clinic Logo"
+            /* h-[500px] civarı 3 katına tekabül eder, sm:h-[650px] ile devasa boyuta ulaşır */
+            className="h-[500px] w-auto object-contain sm:h-[650px]"
+          />
+        </div>
 
             <p className="mt-8 max-w-md text-lg leading-relaxed text-[#9ec8c4] md:text-[21px]">
               Our patients who want to get an offer from abroad can get a quick response via whatsapp.
