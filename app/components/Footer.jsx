@@ -19,7 +19,7 @@ export default function Footer() {
               <img
                 src="/Anastamar.Dental.Clinic.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="h-20 w-auto object-contain sm:h-24"
+                className="h-60 w-auto object-contain sm:h-72"
               />
             </div>
 
