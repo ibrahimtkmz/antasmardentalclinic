@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="mx-auto mb-8 max-w-6xl px-4 md:px-6">
-      <div className="rounded-[28px] bg-[#0b8b80] px-8 py-10 text-white shadow-2xl md:px-12">
+      <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-[#0b8b80] to-[#09776e] px-8 py-10 text-white shadow-2xl md:px-12">
         <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr_0.8fr]">
           <div>
             <div className="text-3xl font-black leading-none">ANASTAMAR</div>
@@ -11,10 +11,10 @@ export default function Footer() {
               known for premium service, advanced technology and patient-focused treatment planning.
             </p>
             <div className="mt-6 flex gap-4 text-sm text-white/85">
-              <span>IG</span>
-              <span>FB</span>
-              <span>TIKTOK</span>
-              <span>YT</span>
+              <span className="transition hover:text-white">IG</span>
+              <span className="transition hover:text-white">FB</span>
+              <span className="transition hover:text-white">TIKTOK</span>
+              <span className="transition hover:text-white">YT</span>
             </div>
           </div>
 

@@ -159,7 +159,9 @@ export default function AnastamarDentalClinicHomepage() {
 
         <section className="relative z-10 mx-auto flex min-h-[640px] max-w-6xl flex-col justify-center px-6 pb-16 pt-20 text-white">
           <div className="max-w-3xl">
-            <p className="mb-4 text-lg font-medium text-[#7af3e8]">Premium Smile Design & Implant Solutions</p>
+            <p className="mb-4 inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6] md:text-base">
+              Premium Smile Design & Implant Solutions
+            </p>
             <h1 className="text-5xl font-black leading-tight md:text-7xl">
               From Consultation to Perfection
               <br />
@@ -180,7 +182,7 @@ export default function AnastamarDentalClinicHomepage() {
                 className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
                 placeholder="Enter your phone number"
               />
-              <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36] transition hover:scale-[1.01]">
+              <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36] transition hover:scale-[1.01] hover:shadow-[0_12px_32px_rgba(3,58,55,0.35)]">
                 Submit Now
               </button>
             </div>
@@ -191,7 +193,7 @@ export default function AnastamarDentalClinicHomepage() {
       <main className="mx-auto -mt-6 max-w-6xl px-4 pb-14 md:px-6">
         <section
           id="why-us"
-          className="grid overflow-hidden rounded-[32px] bg-white shadow-[0_30px_80px_rgba(0,0,0,0.25)] md:grid-cols-[1.1fr_0.9fr]"
+          className="grid overflow-hidden rounded-[32px] border border-white/80 bg-white shadow-[0_30px_80px_rgba(0,0,0,0.25)] md:grid-cols-[1.1fr_0.9fr]"
         >
           <div className="p-8 md:p-12">
             <p className="text-2xl font-semibold text-[#555]">Why</p>
