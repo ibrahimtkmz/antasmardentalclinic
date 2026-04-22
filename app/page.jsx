@@ -229,9 +229,9 @@ export default function AnastamarDentalClinicHomepage() {
 
           <div className="relative min-h-[520px] bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)]">
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1000&q=80"
-              alt="Dental team"
-              className="absolute bottom-0 right-0 h-full w-full object-cover"
+              src="/footer-image.png"
+              alt="Anastamar Dental Clinic logo"
+              className="absolute bottom-0 right-0 h-full w-full object-contain p-8"
             />
           </div>
         </section>
