@@ -2,11 +2,11 @@ export default function Header() {
   return (
     <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-white/15 bg-[#081a1a]/90 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
       <div className="grid items-center gap-6 px-4 py-4 md:grid-cols-[320px_1fr_260px] md:px-6">
-        <a href="#" className="inline-flex items-center justify-center rounded-[0_0_18px_18px] bg-white/95 px-4 py-2 md:-my-4 md:mr-2 md:py-5">
+        <a href="#" className="inline-flex items-center justify-center px-2 py-1 md:-my-3 md:mr-2">
           <img
             src="/Anastamar.Dental.Clinic.png"
             alt="Anastamar Dental Clinic Logo"
-            className="h-14 w-auto object-contain md:h-20"
+            className="h-10 w-auto object-contain sm:h-12 md:h-14 lg:h-16"
           />
         </a>
 
