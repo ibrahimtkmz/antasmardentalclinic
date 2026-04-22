@@ -399,16 +399,45 @@ export default function AnastamarDentalClinicHomepage() {
 
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-3 md:grid-cols-3">
             {[
-              { source: 'Google', score: '4.9', reviews: '4317 Reviews' },
-              { source: 'Trustpilot', score: '4.9', reviews: '6408 Reviews' },
-              { source: 'Yandex', score: '5.0', reviews: '251 Reviews' },
+              {
+                source: 'Google',
+                score: '4.9',
+                reviews: '4317 Reviews',
+                cardClass: 'border border-[#6ae7dc] bg-[#d7fffb]',
+                sourceClass: 'text-[#0f7f76]',
+                scoreClass: 'text-[#07534c]',
+                reviewsClass: 'text-[#0f7f76]',
+              },
+              {
+                source: 'Trustpilot',
+                score: '4.9',
+                reviews: '6408 Reviews',
+                cardClass: 'border border-[#50cfc3] bg-[#c4f5ef]',
+                sourceClass: 'text-[#0d756d]',
+                scoreClass: 'text-[#064841]',
+                reviewsClass: 'text-[#0d756d]',
+              },
+              {
+                source: 'Yandex',
+                score: '5.0',
+                reviews: '251 Reviews',
+                cardClass: 'border border-[#29bcaf] bg-[#a7ece5]',
+                sourceClass: 'text-[#0c6861]',
+                scoreClass: 'text-[#043b36]',
+                reviewsClass: 'text-[#0c6861]',
+              },
               { source: 'Facebook', score: '5.0', reviews: '61 Reviews' },
               { source: 'YouTube', score: '4.96K', reviews: '1000 videos' },
             ].map((rating) => (
-              <div key={rating.source} className="rounded-2xl bg-white px-4 py-3 text-center shadow-sm">
-                <div className="text-sm text-[#677689]">{rating.source}</div>
-                <div className="text-2xl font-black text-[#1f2937]">{rating.score}</div>
-                <div className="text-sm text-[#566272]">{rating.reviews}</div>
+              <div
+                key={rating.source}
+                className={`rounded-2xl px-4 py-3 text-center shadow-sm ${
+                  rating.cardClass ?? 'bg-white'
+                }`}
+              >
+                <div className={`text-sm ${rating.sourceClass ?? 'text-[#677689]'}`}>{rating.source}</div>
+                <div className={`text-2xl font-black ${rating.scoreClass ?? 'text-[#1f2937]'}`}>{rating.score}</div>
+                <div className={`text-sm ${rating.reviewsClass ?? 'text-[#566272]'}`}>{rating.reviews}</div>
               </div>
             ))}
           </div>
