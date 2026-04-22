@@ -34,6 +34,6 @@ body {
 }
 
 .page-shell {
-  width: min(98%, 1920px);
+  width: min(95%, 1920px);
   margin-inline: auto;
 }

@@ -56,15 +56,15 @@ export default function Footer() {
           
           {/* Logo ve İletişim Kolonu */}
           <div className="flex flex-col pt-2"> {/* Başlıklarla hizalanması için hafif bir üst boşluk verdik */}
-  <div className="relative h-[120px] sm:h-[140px]"> {/* Boşluğu daraltmak için yüksekliği azalttık */}
+  <div className="relative h-[130px] sm:h-[150px]"> {/* Boşluğu daraltmak için yüksekliği azalttık */}
     <img
-      src="/logo-beyaz.png"
-      alt="Anastamar Dental Clinic Logo"
+      src="/footer-image.png"
+      alt="Anastamar Dental Clinic Footer Image"
       /* - top-[-100px] değeri logoyu daha yukarı çeker. 
          - left-[-50px] ile logonun solundaki boşluğu traşladık.
          - scale-125 ile logoyu daha da heybetli yapabilirsin.
       */
-      className="absolute left-[-50px] top-[-110px] h-[350px] w-auto object-contain sm:h-[420px] pointer-events-none"
+      className="absolute left-[-12px] top-[-34px] h-[190px] w-auto object-contain sm:h-[220px] pointer-events-none"
     />
   </div>
 
