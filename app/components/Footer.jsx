@@ -59,11 +59,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
           <div>
-            <div className="inline-flex items-center rounded-2xl bg-white/95 px-5 py-3">
+            <div className="inline-flex items-center">
               <img
                 src="/Anastamar.Dental.Clinic.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="h-16 w-auto object-contain sm:h-20"
+                className="h-24 w-auto object-contain sm:h-28"
               />
             </div>
 
@@ -73,8 +73,8 @@ export default function Footer() {
 
             <div className="mt-8 space-y-5 text-base text-[#8db7b3] md:text-[20px]">
               <div>📍 Bakırkoy - İstanbul</div>
-              <div>✉️ info@turkeydentalimplants.net</div>
-              <div>📞 +905401330000</div>
+              <div>✉️ hello@anastamarsmile.com</div>
+              <div>📞 +90 555 321 67 89</div>
             </div>
           </div>
 
