@@ -66,12 +66,16 @@ export default function AnastamarDentalClinicHomepage() {
   ];
 
   const services = [
-    { title: 'Hollywood Smile', image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Dental Implant', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Veneers', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Dental Crowns', image: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Dental Bone Graft', image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80' },
-    { title: 'Sinus Lift', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80' },
+    {
+      title: 'Hollywood Smile',
+      href: '/hollywood-smile',
+      image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80',
+    },
+    { title: 'Dental Implant', href: '/#services', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Veneers', href: '/#services', image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Dental Crowns', href: '/#services', image: 'https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Dental Bone Graft', href: '/#services', image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80' },
+    { title: 'Sinus Lift', href: '/#services', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80' },
   ];
 
   const gallery = [
@@ -259,7 +263,7 @@ export default function AnastamarDentalClinicHomepage() {
 
             <div className="grid grid-cols-2 md:grid-cols-3">
               {services.map((service) => (
-                <div key={service.title} className="group relative h-56 overflow-hidden border border-white/20 md:h-64">
+                <a href={service.href} key={service.title} className="group relative block h-56 overflow-hidden border border-white/20 md:h-64">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -269,7 +273,7 @@ export default function AnastamarDentalClinicHomepage() {
                   <div className="absolute inset-x-0 bottom-4 mx-auto w-max rounded-full bg-white/80 px-4 py-2 text-sm font-medium text-[#222] backdrop-blur">
                     {service.title}
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -318,7 +322,7 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
+        <section id="doctors" className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
           <div className="text-center">
             <h3 className="text-5xl font-black text-[#222]">Meet The Team Behind Your Beautiful Smile</h3>
             <p className="mt-2 text-xl text-[#666]">Your trusted dental partners. Your smile is our passion</p>
