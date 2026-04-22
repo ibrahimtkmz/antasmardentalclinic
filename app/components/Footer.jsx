@@ -15,11 +15,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
           <div>
-            <div className="inline-flex items-center rounded-2xl bg-white/95 px-4 py-3">
+            <div className="inline-flex items-center rounded-2xl bg-white/95 px-5 py-3">
               <img
                 src="/Anastamar.Dental.Clinic.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="h-14 w-auto object-contain"
+                className="h-20 w-auto object-contain sm:h-24"
               />
             </div>
 
