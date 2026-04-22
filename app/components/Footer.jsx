@@ -23,7 +23,7 @@ export default function Footer() {
           
          {/* Logo ve İletişim Kolonu */}
           <div className="flex flex-col pt-2">
-            <div className="relative h-[130px] sm:h-[150px]">
+            <div className="relative h-[330px] sm:h-[150px]">
               <img
                 src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
