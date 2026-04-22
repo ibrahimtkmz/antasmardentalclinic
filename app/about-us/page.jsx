@@ -10,12 +10,12 @@ export default function AboutUsPage() {
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#173a36]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
         <Header />
-        <section className="mx-auto mt-10 max-w-5xl px-6 text-white">
+        <section className="page-shell mt-10 px-4 md:px-6 text-white">
           <h1 className="text-4xl font-black md:text-6xl">Hakkımızda</h1>
           <p className="mt-4 text-lg text-white/90">Anastamar Dental Clinic; estetik, cerrahi ve dijital diş hekimliğini tek çatı altında birleştirir.</p>
         </section>
       </div>
-      <main className="mx-auto -mt-8 max-w-5xl space-y-6 px-4 pb-14 md:px-6">
+      <main className="page-shell -mt-8 space-y-6 px-3 pb-14 md:px-6">
         <section className="rounded-[28px] bg-white p-8 shadow-xl">
           <h2 className="text-3xl font-black text-[#0c4f49]">Vizyonumuz</h2>
           <p className="mt-4 leading-8 text-[#426360]">Uluslararası hastalara güvenli, şeffaf ve yüksek standartlarda dental deneyim sunarak kalıcı gülüşler tasarlamak.</p>

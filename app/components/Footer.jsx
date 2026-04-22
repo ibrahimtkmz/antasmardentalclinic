@@ -51,7 +51,7 @@ const collageItems = [
 export default function Footer() {
   return (
     <footer className="mt-10 border-t border-white/10 bg-[#031416] footer-hex-pattern text-[#9cc9c5] overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
+      <div className="page-shell px-6 py-16 md:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] items-start">
           
           {/* Logo ve İletişim Kolonu */}

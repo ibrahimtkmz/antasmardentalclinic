@@ -32,3 +32,8 @@ body {
   background-size: auto, auto, 44px 44px, 44px 44px;
   background-position: center, center, center, center;
 }
+
+.page-shell {
+  width: min(98%, 1920px);
+  margin-inline: auto;
+}

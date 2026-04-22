@@ -11,7 +11,7 @@ export default function TreatmentsPage() {
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#e7fffb]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
         <Header />
-        <section className="mx-auto mt-10 max-w-6xl px-6 text-white">
+        <section className="page-shell mt-10 px-4 md:px-6 text-white">
           <p className="inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6]">
             Anastamar Treatment Portfolio
           </p>
@@ -23,7 +23,7 @@ export default function TreatmentsPage() {
         </section>
       </div>
 
-      <main className="mx-auto -mt-8 max-w-6xl px-4 pb-14 md:px-6">
+      <main className="page-shell -mt-8 px-3 pb-14 md:px-6">
         <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {treatments.map((item) => (
             <article key={item.slug} className="overflow-hidden rounded-[28px] border border-white/20 bg-white text-[#1b3b38] shadow-2xl">
