@@ -61,7 +61,7 @@ export default function Footer() {
           <div>
             <div className="inline-flex items-center">
               <img
-                src="/Anastamar.Dental.Clinic.png"
+                src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
                 className="h-24 w-auto object-contain sm:h-48"
               />
