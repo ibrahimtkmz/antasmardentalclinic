@@ -1,15 +1,15 @@
 export default function Header() {
   return (
-    <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-white/20 bg-[#041112] shadow-lg">
-  {/* grid-cols-auto sayesinde logo ne kadar büyürse alan o kadar genişler */}
-  <div className="grid items-center gap-8 px-6 py-4 md:grid-cols-[auto_1fr_auto]">
+ <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-white/20 bg-[#041112] shadow-[0_14px_36px_rgba(0,0,0,0.45)]">
+  <div className="grid items-center gap-5 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
     
-    <a href="#" className="flex items-center justify-center rounded-xl bg-white/95 p-2 transition-all hover:scale-105">
+    {/* Beyaz arka plan ve gölge kaldırıldı, sadece logonun kendisi kaldı */}
+    <a href="#" className="inline-flex items-center justify-center">
       <img
         src="/Anastamar.Dental.Clinic.png"
-        alt="Logo"
-        /* Boyutu sadece buradan yönetin: */
-        className="h-26 w-auto object-contain md:h-24 lg:h-28" 
+        alt="Anastamar Dental Clinic Logo"
+        /* Boyutu buradan dilediğin gibi ayarla */
+        className="h-20 w-auto object-contain md:h-28" 
       />
     </a>
 
