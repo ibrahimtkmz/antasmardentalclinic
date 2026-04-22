@@ -9,7 +9,7 @@ export default function Header() {
         src="/Anastamar.Dental.Clinic.png"
         alt="Anastamar Dental Clinic Logo"
         /* Boyutu buradan dilediğin gibi ayarla */
-        className="h-20 w-auto object-contain md:h-38" 
+        className="h-60 w-auto object-contain md:h-38" 
       />
     </a>
 
