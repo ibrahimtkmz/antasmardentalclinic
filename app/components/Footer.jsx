@@ -29,7 +29,7 @@ export default function Footer() {
       src="/logo-beyaz.png"
       alt="Anastamar Dental Clinic Logo"
       /* h- değerleri 3 katına çıkarıldı: 190*3=570, 220*3=660 */
-      className="absolute left-[-12px] top-[-34px] h-[570px] w-auto max-w-none object-contain pointer-events-none sm:h-[660px]"
+      className="absolute left-[-12px] top-[-34px] h-[270px] w-auto max-w-none object-contain pointer-events-none sm:h-[360px]"
     />
   </div>
 
