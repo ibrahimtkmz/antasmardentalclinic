@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="relative z-10 mx-auto mt-5 flex w-[94%] max-w-6xl items-center justify-between rounded-full bg-[#0f9c90] px-6 py-4 text-white shadow-2xl">
+    <header className="relative z-10 mx-auto mt-5 flex w-[94%] max-w-6xl items-center justify-between border border-white/20 rounded-full bg-[#0f9c90]/95 px-6 py-4 text-white shadow-2xl backdrop-blur">
       <div>
         <div className="text-3xl font-black leading-none tracking-tight">ANASTAMAR</div>
         <div className="text-xs tracking-[0.35em] text-white/85">DENTAL CLINIC</div>
@@ -10,10 +10,10 @@ export default function Header() {
         <a href="#" className="rounded-full bg-[#5fe2d6] px-5 py-2 text-[#083a36]">
           Home
         </a>
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" className="transition hover:text-[#b7fff7]">Services</a>
+        <a href="#why-us" className="transition hover:text-[#b7fff7]">Why Us</a>
+        <a href="#gallery" className="transition hover:text-[#b7fff7]">Gallery</a>
+        <a href="#contact" className="transition hover:text-[#b7fff7]">Contact</a>
       </nav>
 
       <div className="flex items-center gap-3 text-sm">

@@ -10,6 +10,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  background: #101010;
+}
+
+::selection {
+  background: #5fe2d6;
+  color: #083a36;
 }
 
 .sharp-theme :is(section, article, header, footer, button, input, select, textarea, details, summary, img, a, div) {
