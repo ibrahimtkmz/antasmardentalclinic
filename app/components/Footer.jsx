@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="flex flex-col pt-2">
             <div className="relative h-[130px] sm:h-[150px]">
               <img
-                src="/Anastamar.Dental.Clinic.png"
+                src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
                 className="absolute left-[-12px] top-[-34px] h-[190px] w-auto max-w-none object-contain pointer-events-none sm:h-[220px]"
               />
