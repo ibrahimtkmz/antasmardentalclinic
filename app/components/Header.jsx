@@ -1,14 +1,16 @@
 export default function Header() {
   return (
     <header className="relative z-20 mx-auto mt-6 w-[96%] max-w-[1440px] rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-      <div className="grid items-center gap-5 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
-        <a href="/" className="inline-flex items-center justify-center">
-          <img
-            src="/Anastamar.Dental.Clinic.png"
-            alt="Anastamar Dental Clinic Logo"
-            className="h-30 w-auto object-contain md:h-28"
-          />
-        </a>
+     <div className="grid items-center gap-5 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:px-6">
+  <a href="/" className="inline-flex items-center justify-center">
+    <img
+      src="/Anastamar.Dental.Clinic.png"
+      alt="Anastamar Dental Clinic Logo"
+      /* h-30 (120px) -> h-[240px] oldu */
+      /* md:h-28 (112px) -> md:h-[224px] oldu */
+      className="h-[240px] w-auto object-contain md:h-[224px]"
+    />
+  </a>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] lg:text-base">
           <a href="/" className="transition hover:text-[#16b3a7]">Home</a>
