@@ -1,27 +1,115 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const featureCards = [
+  {
+    title: 'Dünya Standartlarında Diş Hekimliği',
+    description:
+      'Kliniğimizde ileri teknoloji ekipman, premium malzemeler ve uzman hekim yaklaşımıyla güvenli ve kaliteli tedavi sunuyoruz.',
+  },
+  {
+    title: 'Deneyimli Uzman Kadro',
+    description:
+      'Uzman diş hekimlerimiz ve hasta koordinasyon ekibimiz, tedavi sürecinizin her adımında size eşlik eder.',
+  },
+  {
+    title: 'Sürekli İletişim ve Destek',
+    description:
+      'Tedavi öncesi, tedavi süreci ve sonrasında sorularınızı hızlıca yanıtlayan erişilebilir bir destek sistemi sağlıyoruz.',
+  },
+];
+
 export default function ContactPage() {
   return (
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#173a36]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
         <Header />
-        <section className="mx-auto mt-10 max-w-5xl px-6 text-white">
-          <h1 className="text-4xl font-black md:text-6xl">İletişim</h1>
-          <p className="mt-4 text-lg text-white/90">Tedavi planı ve fiyatlandırma için formu doldurun, ekibimiz size hızlıca dönüş yapsın.</p>
-        </section>
       </div>
-      <main className="mx-auto -mt-8 max-w-5xl px-4 pb-14 md:px-6">
-        <section className="rounded-[28px] bg-white p-8 shadow-xl">
-          <div className="space-y-4">
-            <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Ad Soyad" />
-            <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Telefon" />
-            <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="E-posta" />
-            <textarea className="min-h-[120px] w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 py-4 text-[#111827] outline-none" placeholder="Mesajınız" />
-            <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] text-xl font-bold text-[#0b2440]">Gönder</button>
+
+      <main className="mx-auto -mt-8 max-w-6xl px-4 pb-16 md:px-6">
+        <section className="overflow-hidden rounded-[28px] border border-[#d7eeeb] bg-white shadow-xl">
+          <div className="grid lg:grid-cols-2">
+            <div className="p-7 md:p-10">
+              <p className="inline-flex rounded-md bg-[#d8f7f3] px-3 py-1 text-sm font-semibold text-[#0f8b80]">Anastamar Contact</p>
+              <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">Sizin İçin Buradayız</h1>
+              <p className="mt-4 text-base text-[#456863] md:text-lg">Aşağıdaki formu doldurun, tedavi danışmanlarımız size en kısa sürede dönüş yapsın.</p>
+
+              <form className="mt-8 space-y-4">
+                <input
+                  className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
+                  placeholder="Ad Soyad *"
+                />
+                <div className="grid gap-4 md:grid-cols-2">
+                  <input
+                    className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
+                    placeholder="Telefon Numarası *"
+                  />
+                  <input
+                    className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
+                    placeholder="E-posta Adresi"
+                  />
+                </div>
+                <textarea
+                  className="min-h-[170px] w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 py-4 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
+                  placeholder="Mesajınız"
+                />
+                <button
+                  type="button"
+                  className="h-14 min-w-[170px] rounded-2xl bg-gradient-to-r from-[#14b8aa] to-[#0f8b80] px-8 text-lg font-bold text-white transition hover:shadow-[0_12px_30px_rgba(4,102,92,0.35)]"
+                >
+                  Gönder
+                </button>
+              </form>
+            </div>
+
+            <div className="min-h-[520px] border-t border-[#d7eeeb] bg-[#e8f4f2] lg:border-l lg:border-t-0">
+              <iframe
+                title="Anastamar Clinic Map"
+                src="https://maps.google.com/maps?q=Kadikoy%20Istanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                className="h-full min-h-[520px] w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
+
+        <section className="mt-10 rounded-[28px] bg-[#eaf3f8] p-7 md:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_1.2fr]">
+            <div>
+              <p className="inline-flex rounded-md bg-white px-3 py-1 text-sm font-semibold text-[#0f8b80]">Neden Anastamar?</p>
+              <h2 className="mt-4 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">Mükemmel Hasta Deneyimi ve Güvenilir Sonuçlar</h2>
+            </div>
+            <p className="self-end text-[17px] leading-8 text-[#466a66]">
+              Hastalarımızın beklentilerini dikkatle dinleyip kişiye özel tedavi planı oluşturuyoruz. Organizasyonel süreçlerimiz ve klinik
+              deneyimimiz sayesinde, İstanbul’a varışınızdan dönüşünüze kadar konforlu ve güvenli bir süreç yaşarsınız.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {featureCards.map((card) => (
+              <article key={card.title} className="rounded-2xl bg-white p-6 shadow-sm">
+                <h3 className="text-[30px] leading-none text-[#16b8ab]">•</h3>
+                <h4 className="mt-2 text-2xl font-bold text-[#123f3a]">{card.title}</h4>
+                <p className="mt-3 text-base leading-7 text-[#4f6f6b]">{card.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8 flex flex-col items-start justify-between gap-5 rounded-[26px] border border-[#cae6e2] bg-white px-7 py-8 md:flex-row md:items-center md:px-10">
+          <h3 className="max-w-2xl text-3xl font-black leading-tight text-[#123f3a] md:text-5xl">
+            Diş sağlığı problemleriniz için ilk adımı bugün atın.
+          </h3>
+          <a
+            href="https://wa.me/905555555555"
+            className="inline-flex h-14 items-center rounded-xl bg-[#0f8b80] px-8 text-lg font-bold text-white transition hover:bg-[#0a7067]"
+          >
+            WhatsApp
+          </a>
+        </section>
       </main>
+
       <Footer />
     </div>
   );
