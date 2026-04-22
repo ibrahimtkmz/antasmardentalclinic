@@ -22,3 +22,13 @@ body {
 .sharp-theme :is(section, article, header, footer, button, input, select, textarea, details, summary, img, a, div) {
   border-radius: 8px !important;
 }
+
+.footer-hex-pattern {
+  background-image:
+    radial-gradient(circle at 18% 30%, rgba(11, 24, 53, 0.55), transparent 24%),
+    radial-gradient(circle at 72% 26%, rgba(11, 24, 53, 0.45), transparent 20%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: auto, auto, 44px 44px, 44px 44px;
+  background-position: center, center, center, center;
+}
