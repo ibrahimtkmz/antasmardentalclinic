@@ -161,7 +161,7 @@ export default function AnastamarDentalClinicHomepage() {
 
         <Header />
 
-        <section className="relative z-10 mx-auto flex min-h-[640px] max-w-6xl flex-col justify-center px-6 pb-16 pt-20 text-white">
+        <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-20 text-white md:px-6">
           <div className="max-w-3xl">
             <p className="mb-4 inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6] md:text-base">
               Premium Smile Design & Implant Solutions
@@ -194,7 +194,7 @@ export default function AnastamarDentalClinicHomepage() {
         </section>
       </div>
 
-      <main className="mx-auto -mt-6 max-w-6xl px-4 pb-14 md:px-6">
+      <main className="page-shell -mt-6 px-3 pb-14 md:px-6">
         <section
           id="why-us"
           className="grid overflow-hidden rounded-[32px] border border-white/80 bg-white shadow-[0_30px_80px_rgba(0,0,0,0.25)] md:grid-cols-[1.1fr_0.9fr]"

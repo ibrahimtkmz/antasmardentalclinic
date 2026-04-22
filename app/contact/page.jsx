@@ -26,7 +26,7 @@ export default function ContactPage() {
         <Header />
       </div>
 
-      <main className="mx-auto -mt-8 max-w-6xl px-4 pb-16 md:px-6">
+      <main className="page-shell -mt-8 px-3 pb-16 md:px-6">
         <section className="overflow-hidden rounded-[28px] border border-[#d7eeeb] bg-white shadow-xl">
           <div className="grid lg:grid-cols-2">
             <div className="p-7 md:p-10">
