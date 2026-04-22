@@ -55,25 +55,30 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] items-start">
           
           {/* Logo ve İletişim Kolonu */}
-          <div className="flex flex-col">
-            <div className="relative h-[150px] sm:h-[180px]"> {/* Logo alanı için sabit yükseklik */}
-              <img
-                src="/logo-beyaz.png"
-                alt="Anastamar Dental Clinic Logo"
-                className="absolute left-[-40px] top-[-60px] h-[350px] w-auto object-contain sm:h-[450px] pointer-events-none"
-              />
-            </div>
+          <div className="flex flex-col pt-2"> {/* Başlıklarla hizalanması için hafif bir üst boşluk verdik */}
+  <div className="relative h-[120px] sm:h-[140px]"> {/* Boşluğu daraltmak için yüksekliği azalttık */}
+    <img
+      src="/logo-beyaz.png"
+      alt="Anastamar Dental Clinic Logo"
+      /* - top-[-100px] değeri logoyu daha yukarı çeker. 
+         - left-[-50px] ile logonun solundaki boşluğu traşladık.
+         - scale-125 ile logoyu daha da heybetli yapabilirsin.
+      */
+      className="absolute left-[-50px] top-[-110px] h-[350px] w-auto object-contain sm:h-[420px] pointer-events-none"
+    />
+  </div>
 
-            <p className="mt-4 max-w-md text-lg leading-relaxed text-[#9ec8c4] md:text-[21px]">
-              Our patients who want to get an offer from abroad can get a quick response via WhatsApp.
-            </p>
+  {/* Metin kısmı artık logoya daha yakın başlayacak */}
+  <p className="mt-2 max-w-md text-lg leading-relaxed text-[#9ec8c4] md:text-[21px]">
+    Our patients who want to get an offer from abroad can get a quick response via WhatsApp.
+  </p>
 
-            <div className="mt-8 space-y-5 text-base text-[#8db7b3] md:text-[20px]">
-              <div className="flex items-center gap-3"><span>📍</span> Bakirkoy - Istanbul</div>
-              <div className="flex items-center gap-3"><span>✉️</span> hello@anastamarsmile.com</div>
-              <div className="flex items-center gap-3"><span>📞</span> +90 555 321 67 89</div>
-            </div>
-          </div>
+  <div className="mt-6 space-y-4 text-base text-[#8db7b3] md:text-[20px]">
+    <div className="flex items-center gap-3"><span>📍</span> Bakirkoy - Istanbul</div>
+    <div className="flex items-center gap-3"><span>✉️</span> hello@anastamarsmile.com</div>
+    <div className="flex items-center gap-3"><span>📞</span> +90 555 321 67 89</div>
+  </div>
+</div>
 
           {/* Quick Links Kolonu */}
           <div>
