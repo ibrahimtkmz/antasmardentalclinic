@@ -3,66 +3,22 @@ import Footer from './components/Footer';
 import WhyClinicSection from './components/WhyClinicSection';
 
 export default function AnastamarDentalClinicHomepage() {
-  const journeyDays = [
+  const processSteps = [
     {
-      day: 'Gün 1',
-      items: [
-        {
-          title: 'Havaalanı Karşılama',
-          detail: 'Ekibimiz sizi havaalanında karşılar ve kliniğe güvenli transferinizi sağlar.',
-          time: '1 saat',
-        },
-        {
-          title: 'İlk Muayene & 3D Tarama',
-          detail: 'Ağız içi tarama, panoramik görüntüleme ve tedavi planlaması tamamlanır.',
-          time: '1-2 saat',
-        },
-      ],
+      title: 'Free Examination and Check-Up',
+      text: 'Your oral and dental health is thoroughly evaluated, and your needs are identified by our specialist dentists.',
     },
     {
-      day: 'Gün 2',
-      items: [
-        {
-          title: 'Hazırlık ve Lokal Anestezi',
-          detail: 'İmplant, kaplama veya gülüş tasarımı için hazırlık aşaması uzman ekip tarafından yapılır.',
-          time: '1 saat',
-        },
-        {
-          title: 'Ana Diş İşlemi',
-          detail: 'Planlanan dental işlem hijyenik ve konfor odaklı klinik ortamında uygulanır.',
-          time: '3-5 saat',
-        },
-      ],
+      title: 'Treatment Planning',
+      text: 'A personalized treatment plan is created for you, and the process and available options are explained transparently.',
     },
     {
-      day: 'Gün 3',
-      items: [
-        {
-          title: 'Kontrol ve Prova',
-          detail: 'İyileşme süreci kontrol edilir, gerekiyorsa geçici/prova diş uygulamaları yapılır.',
-          time: '1-2 saat',
-        },
-        {
-          title: 'Boş Zaman',
-          detail: 'Günlük rahatlama ve şehir deneyimi için planınıza uygun serbest zaman bırakılır.',
-          time: 'Opsiyonel',
-        },
-      ],
+      title: 'Treatment Process',
+      text: 'Based on the approved plan, your treatment is carried out safely and comfortably using modern technologies.',
     },
     {
-      day: 'Gün 4',
-      items: [
-        {
-          title: 'Son Kontrol & Bakım Bilgilendirmesi',
-          detail: 'Ağız bakımı, beslenme önerileri ve süreç takibi için net yönlendirme verilir.',
-          time: '1 saat',
-        },
-        {
-          title: 'Havaalanı Transferi',
-          detail: 'Konaklamanızdan havaalanına transfer planlı şekilde tamamlanır.',
-          time: '1 saat',
-        },
-      ],
+      title: 'Lifetime Patient Follow-Up',
+      text: 'After treatment, your oral and dental health is monitored long-term through regular check-ups.',
     },
   ];
 
@@ -133,6 +89,35 @@ export default function AnastamarDentalClinicHomepage() {
       country: 'United Kingdom',
       flag: '🇬🇧',
       text: 'From hotel to clinic service, every part was planned in detail. The staff were warm and highly skilled, and the final result made the journey absolutely worth it.',
+    },
+  ];
+
+
+  const trustCards = [
+    {
+      title: 'International Insurance Support',
+      text: 'We guide you through your insurance coverage and reimbursement procedures with clarity and confidence.',
+      icon: '✅',
+    },
+    {
+      title: 'Transparent Pricing',
+      text: 'Before treatment begins, we provide a clear and detailed cost plan covering all expenses.',
+      icon: '%',
+    },
+    {
+      title: 'Feel Secure',
+      text: 'A dedicated patient coordinator personally guides you through all insurance and payment processes.',
+      icon: '🤝',
+    },
+    {
+      title: 'Guaranteed Treatment Quality',
+      text: 'We offer guarantee conditions for our treatments performed using materials that meet international standards.',
+      icon: '⭐',
+    },
+    {
+      title: 'Multilingual Communication',
+      text: 'You can communicate directly with our expert doctors and team in your own language at every stage.',
+      icon: '🌐',
     },
   ];
 
@@ -232,29 +217,28 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-white px-6 py-12 text-center shadow-xl md:px-10">
-          <h3 className="text-5xl font-black text-[#222]">Radiant Smiles, Forever Captured</h3>
-          <p className="mt-2 text-xl text-[#666]">Real smiles, real words. Our patients’ stories.</p>
-          <div className="mt-10 grid gap-4 md:grid-cols-5">
-            {['United States', 'Canada', 'Italy', 'Beware', 'Ukraine'].map((country, i) => (
-              <div key={country} className="relative h-72 overflow-hidden rounded-[24px]">
-                <img
-                  src={`https://images.unsplash.com/photo-${[
-                    '1606811971618-4486d14f3f99',
-                    '1598256989800-fe5f95da9787',
-                    '1517841905240-472988babdf9',
-                    '1524504388940-b1c1722653e1',
-                    '1545239351-1141bd82e8a6',
-                  ][i]}?auto=format&fit=crop&w=900&q=80`}
-                  alt={country}
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
-                <div className="absolute left-4 top-4 text-3xl font-black uppercase tracking-wide text-[#89f6d5]">
-                  {country}
-                </div>
-              </div>
-            ))}
+        <section className="relative mt-10 overflow-hidden rounded-[28px] shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1609207825181-a25b4bd47f86?auto=format&fit=crop&w=2200&q=80"
+            alt="Happy patient and dentist"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-[#0e2f3f]/80 to-[#3aa9d8]/70" />
+          <div className="relative grid items-center gap-10 px-6 py-10 text-white md:grid-cols-[0.9fr_1.1fr] md:px-12">
+            <div className="mx-auto w-full max-w-[260px] rounded-full border-8 border-[#f5f5f5]/80 bg-white/95 p-8 text-center text-[#1f2937] shadow-2xl">
+              <div className="text-5xl font-black text-[#4285f4]">G</div>
+              <div className="mt-2 text-3xl font-bold">4.9</div>
+              <div className="mt-2 text-lg">★★★★★</div>
+              <div className="mt-1 text-3xl font-black">+1.200</div>
+            </div>
+            <div className="text-center md:text-left">
+              <h3 className="text-4xl font-semibold md:text-6xl">+1.200 Real Reviews</h3>
+              <p className="mt-4 text-2xl text-white/95 md:text-4xl">
+                Curious About Our Service Quality?
+                <br />
+                Explore Our Google Reviews.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -296,35 +280,34 @@ export default function AnastamarDentalClinicHomepage() {
 
         <section className="relative mt-10 overflow-hidden rounded-[28px] shadow-xl">
           <img
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=80"
-            alt="Happy patient smiling"
+            src="https://images.unsplash.com/photo-1588776814127-76f8d2f1f3e4?auto=format&fit=crop&w=2200&q=80"
+            alt="Dental tools"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#5f4a65]/75" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2f3940]/90 via-[#5a7a88]/80 to-[#97b8cc]/75" />
 
-          <div className="relative grid gap-10 px-6 py-12 text-white md:grid-cols-2 md:px-12 md:py-16">
-            <div className="flex items-center">
-              <h3 className="text-4xl font-light leading-tight md:text-6xl">
-                Short Term Campaign for
+          <div className="relative grid gap-10 px-6 py-12 text-white md:grid-cols-[1.2fr_0.8fr] md:px-12 md:py-16">
+            <div>
+              <h3 className="max-w-3xl text-4xl font-black leading-tight md:text-7xl">
+                Comfortable Treatment,
                 <br />
-                <span className="font-bold text-[#c8ff2f]">Periodontics</span> Treatments
+                Trusted Results
               </h3>
+              <h4 className="mt-4 text-3xl font-medium leading-tight md:text-6xl">
+                The Istanbul Dental Center Difference
+              </h4>
+              <p className="mt-8 max-w-2xl text-lg leading-9 text-white/90 md:text-3xl md:leading-[1.45]">
+                At Istanbul Dental Center, we safeguard your smile at every step with our standards of quality, hygiene, and expertise.
+                Through personalized treatment plans and our professional team, we deliver comfortable care and long-lasting results.
+              </p>
             </div>
 
-            <div>
-              <h4 className="max-w-xl text-4xl font-light leading-tight md:text-6xl">
-                <span className="font-medium text-[#c8ff2f]">Unmissable Opportunities</span> for Health and Aesthetics in Your Smile!
-              </h4>
-              <p className="mt-8 max-w-2xl text-lg leading-9 text-white/90">
-                Now is the perfect time for a healthy and confident smile. With special campaign opportunities in dental aesthetics, implants and periodontics, you can complete your treatment with expert care and comfort.
-              </p>
-              <a
-                href="#contact"
-                className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-8 py-4 text-3xl font-semibold text-[#1d2f45] transition hover:translate-y-[-1px]"
-              >
-                Contact Us
-                <span aria-hidden="true">→</span>
-              </a>
+            <div className="relative hidden overflow-hidden rounded-tl-[200px] bg-white md:block">
+              <img
+                src="https://images.unsplash.com/photo-1643818650804-651c4b6ca5f6?auto=format&fit=crop&w=1000&q=80"
+                alt="Dental specialist with tools"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -396,36 +379,47 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
-          <div className="mx-auto max-w-3xl text-center">
-            <h3 className="text-5xl font-black text-[#171b21]">4 Günlük Dental Tedavi Yolculuğu</h3>
-            <p className="mt-3 text-xl text-[#4a5765]">
-              Tasarımı dental işlemlere uyarladık: planlama, işlem, kontrol ve transfer adımlarını net şekilde görebilirsiniz.
-            </p>
+        <section className="mt-10 grid gap-6 md:grid-cols-[1.05fr_1fr]">
+          <div className="rounded-[30px] bg-[#58bce8] p-8 text-white shadow-xl md:p-10">
+            <h3 className="text-5xl font-black leading-tight md:text-6xl">
+              Step-by-Step
+              <br />
+              Treatment Journey
+            </h3>
+            <div className="mt-8 space-y-8 border-l-4 border-white/50 pl-8">
+              {processSteps.map((step) => (
+                <div key={step.title} className="relative">
+                  <span className="absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#7dd0f2]" />
+                  <h4 className="text-3xl font-semibold leading-tight">{step.title}</h4>
+                  <p className="mt-2 text-xl leading-9 text-white/95">{step.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-4">
-            {journeyDays.map((day) => (
-              <article key={day.day} className="border border-[#c7e6ef] bg-[#d8e8ef] p-5">
-                <div className="border-b border-[#bddae3] pb-3 text-xl font-black text-[#123]">{day.day}</div>
-                <div className="mt-4 space-y-3">
-                  {day.items.map((item) => (
-                    <div key={item.title} className="border border-[#b6d8e2] bg-[#c5e0e8] p-4">
-                      <div className="flex items-center justify-between gap-2">
-                        <h4 className="text-lg font-bold leading-tight text-[#101820]">{item.title}</h4>
-                        <span className="bg-[#7fd2eb] px-2 py-1 text-xs font-semibold text-[#0d2f3d]">{item.time}</span>
-                      </div>
-                      <p className="mt-2 text-sm leading-6 text-[#334155]">{item.detail}</p>
-                    </div>
-                  ))}
-                </div>
+          <div className="grid gap-4">
+            <div className="overflow-hidden rounded-[30px]">
+              <img src="/bafter-13.jpeg" alt="Patient smile result 1" className="h-full min-h-[260px] w-full object-cover" />
+            </div>
+            <div className="overflow-hidden rounded-[30px]">
+              <img src="/bafter-8.jpeg" alt="Patient smile result 2" className="h-full min-h-[260px] w-full object-cover" />
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-10 rounded-[28px] bg-[#efefef] px-6 py-10 shadow-xl md:px-8">
+          <div className="grid gap-5 md:grid-cols-5">
+            {trustCards.map((card) => (
+              <article
+                key={card.title}
+                className="rounded-[24px] bg-gradient-to-b from-[#0a1a25] via-[#275b77] to-[#57c5f0] p-6 text-center text-white shadow-lg"
+              >
+                <h4 className="text-4xl font-bold leading-tight">{card.title}</h4>
+                <div className="mx-auto my-6 h-1 w-36 bg-white/85" />
+                <p className="text-2xl leading-10 text-white/95">{card.text}</p>
+                <div className="mt-8 text-6xl">{card.icon}</div>
               </article>
             ))}
-          </div>
-          <div className="mt-8 text-center">
-            <button className="bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] px-8 py-3 text-base font-bold text-[#0b2440]">
-              Randevu Oluştur
-            </button>
           </div>
         </section>
 
