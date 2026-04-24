@@ -80,16 +80,16 @@ export default function AnastamarDentalClinicHomepage() {
   ];
 
   const gallery = [
-    'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1625134673337-519d3d9d9f0d?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80',
-    'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80',
+    '/bafter-1.jpeg',
+    '/bafter-2.jpeg',
+    '/bafter-3.jpeg',
+    '/bafter-4.jpeg',
+    '/bafter-5.jpeg',
+    '/bafter-6.jpeg',
+    '/bafter-7.jpeg',
+    '/bafter-8.jpeg',
+    '/bafter-9.jpeg',
+    '/bafter-10.jpeg',
   ];
 
   const doctors = [
