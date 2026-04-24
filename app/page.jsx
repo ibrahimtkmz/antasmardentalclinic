@@ -90,6 +90,11 @@ export default function AnastamarDentalClinicHomepage() {
     '/bafter-8.jpeg',
     '/bafter-9.jpeg',
     '/bafter-10.jpeg',
+    '/bafter-11.jpeg',
+    '/bafter-12.jpeg',
+    '/bafter-13.jpeg',
+    '/bafter-14.jpeg',
+    '/bafter-15.jpeg',
   ];
 
   const doctors = [
@@ -197,20 +202,6 @@ export default function AnastamarDentalClinicHomepage() {
 
       <main className="page-shell -mt-6 px-3 pb-14 md:px-6">
         <WhyClinicSection />
-
-        <section className="mt-8 overflow-hidden rounded-[28px] bg-[#0d9f93] px-8 py-12 text-white shadow-xl md:px-14">
-          <div className="text-center">
-            <h3 className="text-4xl font-black">Innovation & Precision In Every Implant</h3>
-            <p className="mt-2 text-white/85">We use only implants, high quality implants designed for long term durability.</p>
-          </div>
-          <div className="mt-10 grid grid-cols-2 gap-6 text-center text-lg font-semibold text-white/90 md:grid-cols-5">
-            <div>BIOTEC</div>
-            <div>Hiossen</div>
-            <div>Straumann</div>
-            <div>Nobel Biocare</div>
-            <div>MEGAGEN</div>
-          </div>
-        </section>
 
         <section id="services" className="mt-8 overflow-hidden rounded-[28px] bg-white shadow-xl">
           <div className="grid md:grid-cols-[1.08fr_1.92fr]">
