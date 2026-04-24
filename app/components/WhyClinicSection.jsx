@@ -18,8 +18,8 @@ export default function WhyClinicSection() {
         className="grid overflow-hidden rounded-[32px] border border-white/80 bg-white shadow-[0_30px_80px_rgba(0,0,0,0.25)] md:grid-cols-[1.1fr_0.9fr]"
       >
         <div className="p-8 md:p-12">
-          <p className="text-2xl font-semibold text-[#555]">Why</p>
-          <h2 className="text-5xl font-black leading-none text-[#222]">Anastamar Clinic</h2>
+          <p className="text-xl font-semibold text-[#555] md:text-2xl">Why</p>
+          <h2 className="text-3xl font-black leading-none text-[#222] sm:text-4xl md:text-5xl">Anastamar Clinic</h2>
           <p className="mt-6 text-[15px] leading-7 text-[#666]">
             Anastamar Dental Clinic is a modern dental destination in Istanbul, offering advanced smile design, implants, veneers and aesthetic dentistry solutions for international patients. Our mission is to combine expert care, precision technology and a comfortable clinical journey that helps every patient smile with confidence.
           </p>
@@ -27,17 +27,17 @@ export default function WhyClinicSection() {
             With personalized treatment planning, multilingual support and a highly experienced team, Anastamar Dental Clinic focuses on reliable results, transparent communication and a truly premium treatment experience from start to finish.
           </p>
 
-          <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#ececec] pt-8">
+          <div className="mt-8 grid grid-cols-1 gap-5 border-t border-[#ececec] pt-6 sm:mt-10 sm:grid-cols-3 sm:gap-6 sm:pt-8">
             <div>
-              <div className="text-4xl font-black text-[#222]">11 +</div>
+              <div className="text-3xl font-black text-[#222] md:text-4xl">11 +</div>
               <div className="mt-2 text-sm text-[#7b7b7b]">Experience Years</div>
             </div>
             <div>
-              <div className="text-4xl font-black text-[#222]">10547 +</div>
+              <div className="text-3xl font-black text-[#222] md:text-4xl">10547 +</div>
               <div className="mt-2 text-sm text-[#7b7b7b]">Hollywood Smile</div>
             </div>
             <div>
-              <div className="text-4xl font-black text-[#222]">15246 +</div>
+              <div className="text-3xl font-black text-[#222] md:text-4xl">15246 +</div>
               <div className="mt-2 text-sm text-[#7b7b7b]">Happy Patients</div>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function WhyClinicSection() {
           <button className="mt-8 font-semibold text-[#109f93]">Learn More</button>
         </div>
 
-        <div className="grid grid-cols-3 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4">
+        <div className="grid grid-cols-1 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4 sm:grid-cols-3">
           {clinicVideos.map((video) => (
             <button
               key={video.src}
