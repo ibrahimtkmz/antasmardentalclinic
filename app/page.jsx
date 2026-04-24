@@ -1,8 +1,19 @@
+'use client';
+
+import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhyClinicSection from './components/WhyClinicSection';
 
 export default function AnastamarDentalClinicHomepage() {
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState(null);
+
+  const handleGalleryClick = (image) => {
+    if (window.innerWidth < 768) {
+      setSelectedGalleryImage(image);
+    }
+  };
+
   const processSteps = [
     {
       title: 'Free Examination and Check-Up',
@@ -244,9 +255,15 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-5">
             {gallery.map((image, index) => (
-              <div key={index} className="overflow-hidden rounded-[20px]">
+              <button
+                key={index}
+                type="button"
+                onClick={() => handleGalleryClick(image)}
+                className="overflow-hidden rounded-[20px] text-left"
+                aria-label={`Open gallery image ${index + 1}`}
+              >
                 <img src={image} alt={`Gallery ${index + 1}`} className="h-40 w-full object-cover md:h-44" />
-              </div>
+              </button>
             ))}
           </div>
           <div className="mt-8 text-center">
@@ -493,6 +510,25 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
       </main>
+        {selectedGalleryImage && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 md:hidden">
+            <div className="relative w-full max-w-sm rounded-2xl bg-white p-3">
+              <button
+                type="button"
+                onClick={() => setSelectedGalleryImage(null)}
+                className="absolute right-2 top-2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-white"
+                aria-label="Close gallery image"
+              >
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <path d="M6 6L18 18" />
+                  <path d="M18 6L6 18" />
+                </svg>
+              </button>
+              <img src={selectedGalleryImage} alt="Selected gallery" className="h-[420px] w-full rounded-xl object-cover" />
+            </div>
+          </div>
+        )}
+
 
       <Footer />
     </div>
