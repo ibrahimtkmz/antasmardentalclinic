@@ -25,7 +25,7 @@ export default function DoctorsPage() {
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
         <Header />
         <section className="page-shell mt-10 px-4 md:px-6 text-white">
-          <h1 className="text-4xl font-black md:text-6xl">Doktorlarımız</h1>
+          <h1 className="text-4xl font-black md:text-6xl">Our Doctors</h1>
         </section>
       </div>
       <main className="page-shell -mt-8 px-3 pb-14 md:px-6">
