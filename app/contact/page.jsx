@@ -3,19 +3,19 @@ import Footer from '../components/Footer';
 
 const featureCards = [
   {
-    title: 'Dünya Standartlarında Diş Hekimliği',
+    title: 'World-Class Dentistry',
     description:
-      'Kliniğimizde ileri teknoloji ekipman, premium malzemeler ve uzman hekim yaklaşımıyla güvenli ve kaliteli tedavi sunuyoruz.',
+      'At our clinic, we provide safe and high-quality treatment using advanced technology, premium materials, and an expert clinical approach.',
   },
   {
-    title: 'Deneyimli Uzman Kadro',
+    title: 'Experienced Specialist Team',
     description:
-      'Uzman diş hekimlerimiz ve hasta koordinasyon ekibimiz, tedavi sürecinizin her adımında size eşlik eder.',
+      'Our specialist dentists and patient coordination team support you at every step of your treatment journey.',
   },
   {
-    title: 'Sürekli İletişim ve Destek',
+    title: 'Continuous Communication and Support',
     description:
-      'Tedavi öncesi, tedavi süreci ve sonrasında sorularınızı hızlıca yanıtlayan erişilebilir bir destek sistemi sağlıyoruz.',
+      'We offer an accessible support system that responds quickly to your questions before, during, and after treatment.',
   },
 ];
 
@@ -31,33 +31,33 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2">
             <div className="p-7 md:p-10">
               <p className="inline-flex rounded-md bg-[#d8f7f3] px-3 py-1 text-sm font-semibold text-[#0f8b80]">Anastamar Contact</p>
-              <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">Sizin İçin Buradayız</h1>
-              <p className="mt-4 text-base text-[#456863] md:text-lg">Aşağıdaki formu doldurun, tedavi danışmanlarımız size en kısa sürede dönüş yapsın.</p>
+              <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">We Are Here for You</h1>
+              <p className="mt-4 text-base text-[#456863] md:text-lg">Fill out the form below, and our treatment consultants will contact you as soon as possible.</p>
 
               <form className="mt-8 space-y-4">
                 <input
                   className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
-                  placeholder="Ad Soyad *"
+                  placeholder="Full Name *"
                 />
                 <div className="grid gap-4 md:grid-cols-2">
                   <input
                     className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
-                    placeholder="Telefon Numarası *"
+                    placeholder="Phone Number *"
                   />
                   <input
                     className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
-                    placeholder="E-posta Adresi"
+                    placeholder="Email Address"
                   />
                 </div>
                 <textarea
                   className="min-h-[170px] w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 py-4 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
-                  placeholder="Mesajınız"
+                  placeholder="Your Message"
                 />
                 <button
                   type="button"
                   className="h-14 min-w-[170px] rounded-2xl bg-gradient-to-r from-[#14b8aa] to-[#0f8b80] px-8 text-lg font-bold text-white transition hover:shadow-[0_12px_30px_rgba(4,102,92,0.35)]"
                 >
-                  Gönder
+                  Send
                 </button>
               </form>
             </div>
@@ -77,12 +77,12 @@ export default function ContactPage() {
         <section className="mt-10 rounded-[28px] bg-[#eaf3f8] p-7 md:p-10">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_1.2fr]">
             <div>
-              <p className="inline-flex rounded-md bg-white px-3 py-1 text-sm font-semibold text-[#0f8b80]">Neden Anastamar?</p>
-              <h2 className="mt-4 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">Mükemmel Hasta Deneyimi ve Güvenilir Sonuçlar</h2>
+              <p className="inline-flex rounded-md bg-white px-3 py-1 text-sm font-semibold text-[#0f8b80]">Why Anastamar?</p>
+              <h2 className="mt-4 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">Excellent Patient Experience and Reliable Results</h2>
             </div>
             <p className="self-end text-[17px] leading-8 text-[#466a66]">
-              Hastalarımızın beklentilerini dikkatle dinleyip kişiye özel tedavi planı oluşturuyoruz. Organizasyonel süreçlerimiz ve klinik
-              deneyimimiz sayesinde, İstanbul’a varışınızdan dönüşünüze kadar konforlu ve güvenli bir süreç yaşarsınız.
+              We carefully listen to our patients&apos; expectations and create personalized treatment plans. Thanks to our streamlined organization
+              and clinical experience, you enjoy a comfortable and safe process from your arrival in Istanbul until your return.
             </p>
           </div>
 
@@ -98,9 +98,9 @@ export default function ContactPage() {
         </section>
 
         <section className="mt-8 flex flex-col items-start justify-between gap-5 rounded-[26px] border border-[#cae6e2] bg-white px-7 py-8 md:flex-row md:items-center md:px-10">
-          <h3 className="max-w-2xl text-3xl font-black leading-tight text-[#123f3a] md:text-5xl">
-            Diş sağlığı problemleriniz için ilk adımı bugün atın.
-          </h3>
+            <h3 className="max-w-2xl text-3xl font-black leading-tight text-[#123f3a] md:text-5xl">
+            Take the first step toward solving your dental health concerns today.
+            </h3>
           <a
             href="https://wa.me/905555555555"
             className="inline-flex h-14 items-center rounded-xl bg-[#0f8b80] px-8 text-lg font-bold text-white transition hover:bg-[#0a7067]"

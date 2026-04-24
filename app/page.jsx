@@ -55,17 +55,17 @@ export default function AnastamarDentalClinicHomepage() {
 
   const doctors = [
     {
-      name: 'Doktor Bey',
+      name: 'Dr. Ahmet Yılmaz',
       role: 'Cosmetic Dentist',
       image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80',
     },
     {
-      name: 'Doktor Bey',
+      name: 'Dr. Elif Kaya',
       role: 'Cosmetic Dentist',
       image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80',
     },
     {
-      name: 'Doktor Bey',
+      name: 'Dr. Can Demir',
       role: 'Surgical Dentist',
       image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80',
     },
@@ -434,7 +434,7 @@ export default function AnastamarDentalClinicHomepage() {
               <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Name" />
               <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Email" />
               <select className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none">
-                <option>Türkiye</option>
+                <option>Turkey</option>
                 <option>United Kingdom</option>
                 <option>United States</option>
               </select>

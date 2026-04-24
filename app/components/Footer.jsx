@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="page-shell px-6 py-16 md:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] items-start">
           
-         {/* Logo ve İletişim Kolonu */}
+         {/* Logo and Contact Column */}
           <div className="flex flex-col pt-2">
             <div className="relative h-[330px] sm:h-[150px]">
               <img
@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links Kolonu */}
+          {/* Quick Links Column */}
           <div>
             <h3 className="text-2xl font-bold text-white md:text-3xl">Quick Links</h3>
             <div className="mt-4 h-1 w-24 rounded bg-[#5fe2d6]" />
@@ -55,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services Kolonu */}
+          {/* Services Column */}
           <div>
             <h3 className="text-2xl font-bold text-white md:text-3xl">Popular Services</h3>
             <div className="mt-4 h-1 w-24 rounded bg-[#5fe2d6]" />
@@ -66,7 +66,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Sağ Görsel */}
+          {/* Right Visual */}
           <div className="relative min-h-[430px] overflow-hidden rounded-[24px] bg-[#010f1f] p-2 shadow-2xl">
             <img
               src="/footer-image.png"
