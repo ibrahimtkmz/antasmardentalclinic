@@ -30,7 +30,7 @@ export default function TreatmentDetailPage({ params }) {
         </section>
 
         <section className="rounded-[26px] bg-white p-6 shadow-[0_20px_40px_rgba(7,45,41,0.1)] md:p-9">
-          <h2 className="text-3xl font-black text-[#0b355f]">Treatment Overview</h2>
+          <h2 className="text-3xl font-black text-[#0c4f49]">Treatment Overview</h2>
           <p className="mt-4 leading-8 text-[#35514d]">{treatment.overview}</p>
 
           <h3 className="mt-8 text-2xl font-black text-[#0c4f49]">What&apos;s included in this treatment?</h3>
@@ -45,7 +45,7 @@ export default function TreatmentDetailPage({ params }) {
           <div className="mt-8 rounded-2xl bg-[#0fa79b] p-6 text-white">
             <h3 className="text-2xl font-black">Estimated Treatment Duration: {treatment.duration}</h3>
             <p className="mt-2 text-white/90">The final treatment plan and timeline will be confirmed by your doctor after your personal examination.</p>
-            <a href="/contact" className="mt-5 inline-block rounded-full bg-white px-6 py-3 text-sm font-extrabold uppercase tracking-wide text-[#0b355f]">
+            <a href="/contact" className="mt-5 inline-block rounded-full bg-white px-6 py-3 text-sm font-extrabold uppercase tracking-wide text-[#0c4f49]">
               Free Initial Consultation
             </a>
           </div>

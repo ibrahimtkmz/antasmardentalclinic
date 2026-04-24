@@ -215,10 +215,10 @@ export default function AnastamarDentalClinicHomepage() {
             alt="Happy patient and dentist"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-[#0e2f3f]/80 to-[#3aa9d8]/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-[#0d4f4a]/80 to-[#16b3a7]/70" />
           <div className="relative grid items-center gap-10 px-6 py-10 text-white md:grid-cols-[0.9fr_1.1fr] md:px-12">
             <div className="mx-auto w-full max-w-[260px] rounded-full border-8 border-[#f5f5f5]/80 bg-white/95 p-8 text-center text-[#1f2937] shadow-2xl">
-              <div className="text-5xl font-black text-[#4285f4]">G</div>
+              <div className="text-5xl font-black text-[#16b3a7]">G</div>
               <div className="mt-2 text-3xl font-bold">4.9</div>
               <div className="mt-2 text-lg">★★★★★</div>
               <div className="mt-1 text-3xl font-black">+1.200</div>
@@ -276,7 +276,7 @@ export default function AnastamarDentalClinicHomepage() {
             alt="Dental tools"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2f3940]/90 via-[#5a7a88]/80 to-[#97b8cc]/75" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#203231]/90 via-[#2f6d68]/80 to-[#7bcfc7]/75" />
 
           <div className="relative grid gap-10 px-6 py-12 text-white md:grid-cols-[1.2fr_0.8fr] md:px-12 md:py-16">
             <div>
@@ -304,7 +304,7 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
+        <section className="mt-10 rounded-[28px] bg-[#eef7f6] px-6 py-12 shadow-xl md:px-10">
           <div className="mx-auto max-w-3xl text-center">
             <h3 className="text-5xl font-black text-[#171b21]">Testimonials</h3>
             <p className="mt-3 text-xl text-[#4a5765]">
@@ -314,7 +314,7 @@ export default function AnastamarDentalClinicHomepage() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {testimonials.map((item) => (
-              <article key={item.name} className="rounded-[30px] bg-[#d5edf5] p-7">
+              <article key={item.name} className="rounded-[30px] bg-[#d8f4f1] p-7">
                 <p className="text-[20px] leading-9 text-[#1f2a37]">{item.text}</p>
                 <div className="mt-8 font-bold text-[#1c2430]">{item.name}</div>
                 <div className="mt-1 flex items-center gap-2 text-lg text-[#445260]">
@@ -372,7 +372,7 @@ export default function AnastamarDentalClinicHomepage() {
         </section>
 
         <section className="mt-10 grid gap-6 md:grid-cols-[1.05fr_1fr]">
-          <div className="rounded-[30px] bg-[#58bce8] p-8 text-white shadow-xl md:p-10">
+          <div className="rounded-[30px] bg-[#22c5b6] p-8 text-white shadow-xl md:p-10">
             <h3 className="text-5xl font-black leading-tight md:text-6xl">
               Step-by-Step
               <br />
@@ -386,7 +386,7 @@ export default function AnastamarDentalClinicHomepage() {
                   style={{ animationDelay: `${index * 0.25}s` }}
                 >
                   <span
-                    className="step-blink-dot absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#7dd0f2]"
+                    className="step-blink-dot absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#5fe2d6]"
                     style={{ animationDelay: `${index * 0.25}s` }}
                   />
                   <h4 className="text-3xl font-semibold leading-tight">{step.title}</h4>
@@ -411,7 +411,7 @@ export default function AnastamarDentalClinicHomepage() {
             {trustCards.map((card) => (
               <article
                 key={card.title}
-                className="rounded-[24px] bg-gradient-to-b from-[#0a1a25] via-[#275b77] to-[#57c5f0] p-5 text-center text-white shadow-lg md:p-6"
+                className="rounded-[24px] bg-gradient-to-b from-[#082c29] via-[#0f6f67] to-[#3ad5c9] p-5 text-center text-white shadow-lg md:p-6"
               >
                 <h4 className="text-2xl font-bold leading-snug md:text-3xl">{card.title}</h4>
                 <div className="mx-auto my-5 h-1 w-28 bg-white/85 md:my-6 md:w-32" />
@@ -421,7 +421,7 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 overflow-hidden rounded-[28px] bg-[#d5edf5] shadow-xl md:grid md:grid-cols-[1.08fr_0.92fr]">
+        <section className="mt-10 overflow-hidden rounded-[28px] bg-[#d8f4f1] shadow-xl md:grid md:grid-cols-[1.08fr_0.92fr]">
           <div className="p-8 md:p-12">
             <h3 className="text-6xl font-black leading-none text-[#111827]">Contact Us</h3>
             <p className="mt-6 max-w-xl text-[32px] leading-[1.25] text-[#182433]">
@@ -429,31 +429,31 @@ export default function AnastamarDentalClinicHomepage() {
             </p>
 
             <div className="mt-8 space-y-4">
-              <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Name" />
-              <input className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none" placeholder="Email" />
-              <select className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#111827] outline-none">
+              <input className="h-14 w-full rounded-2xl border border-[#c7e1de] bg-[#f1f8f7] px-5 text-[#111827] outline-none" placeholder="Name" />
+              <input className="h-14 w-full rounded-2xl border border-[#c7e1de] bg-[#f1f8f7] px-5 text-[#111827] outline-none" placeholder="Email" />
+              <select className="h-14 w-full rounded-2xl border border-[#c7e1de] bg-[#f1f8f7] px-5 text-[#111827] outline-none">
                 <option>Turkey</option>
                 <option>United Kingdom</option>
                 <option>United States</option>
               </select>
-              <div className="grid grid-cols-[110px_1fr] overflow-hidden rounded-2xl border border-[#c8d9df] bg-[#f4f7f9]">
-                <div className="grid place-items-center border-r border-[#c8d9df] text-[#111827]">🇹🇷 +90</div>
+              <div className="grid grid-cols-[110px_1fr] overflow-hidden rounded-2xl border border-[#c7e1de] bg-[#f1f8f7]">
+                <div className="grid place-items-center border-r border-[#c7e1de] text-[#111827]">🇹🇷 +90</div>
                 <input className="h-14 bg-transparent px-5 text-[#111827] outline-none" placeholder="0501 234 56 78" />
               </div>
-              <select className="h-14 w-full rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] px-5 text-[#8da0b5] outline-none">
+              <select className="h-14 w-full rounded-2xl border border-[#c7e1de] bg-[#f1f8f7] px-5 text-[#6d8b87] outline-none">
                 <option>Select Service</option>
                 <option>Hollywood Smile</option>
                 <option>Implant</option>
               </select>
-              <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] text-2xl font-bold text-[#0b2440]">
+              <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#5fe2d6] to-[#16b3a7] text-2xl font-bold text-[#053e39]">
                 Submit
               </button>
             </div>
 
-            <div className="mt-8 flex items-center gap-5 text-[#607286]">
-              <span className="h-px flex-1 bg-[#bdd4dd]" />
+            <div className="mt-8 flex items-center gap-5 text-[#4c6662]">
+              <span className="h-px flex-1 bg-[#c4e3df]" />
               <span className="text-sm">or reach us through</span>
-              <span className="h-px flex-1 bg-[#bdd4dd]" />
+              <span className="h-px flex-1 bg-[#c4e3df]" />
             </div>
             <div className="mt-5 flex gap-3">
               <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">📞</button>
@@ -468,7 +468,7 @@ export default function AnastamarDentalClinicHomepage() {
               alt="Dentist consulting patient"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#d5edf5]/5 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#d8f4f1]/5 to-transparent" />
           </div>
         </section>
 
