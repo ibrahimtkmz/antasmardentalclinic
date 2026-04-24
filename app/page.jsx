@@ -412,12 +412,12 @@ export default function AnastamarDentalClinicHomepage() {
             {trustCards.map((card) => (
               <article
                 key={card.title}
-                className="rounded-[24px] bg-gradient-to-b from-[#0a1a25] via-[#275b77] to-[#57c5f0] p-6 text-center text-white shadow-lg"
+                className="rounded-[24px] bg-gradient-to-b from-[#0a1a25] via-[#275b77] to-[#57c5f0] p-5 text-center text-white shadow-lg md:p-6"
               >
-                <h4 className="text-4xl font-bold leading-tight">{card.title}</h4>
-                <div className="mx-auto my-6 h-1 w-36 bg-white/85" />
-                <p className="text-2xl leading-10 text-white/95">{card.text}</p>
-                <div className="mt-8 text-6xl">{card.icon}</div>
+                <h4 className="text-2xl font-bold leading-snug md:text-3xl">{card.title}</h4>
+                <div className="mx-auto my-5 h-1 w-28 bg-white/85 md:my-6 md:w-32" />
+                <p className="text-lg leading-8 text-white/95 md:text-xl md:leading-9">{card.text}</p>
+                <div className="mt-7 text-5xl md:mt-8 md:text-6xl">{card.icon}</div>
               </article>
             ))}
           </div>
