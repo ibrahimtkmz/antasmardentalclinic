@@ -149,13 +149,10 @@ export default function AnastamarDentalClinicHomepage() {
 
         <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-20 text-white md:px-6">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6] md:text-base">
-              Premium Smile Design & Implant Solutions
-            </p>
             <h1 className="text-5xl font-black leading-tight md:text-7xl">
               From Consultation to Perfection
               <br />
-              Your Smile Journey Starts Here
+              <span className="wave-gradient-text">Your Smile Journey Starts Here</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/85 md:text-xl">
               Anastamar Dental Clinic delivers advanced cosmetic dentistry, implants and smile makeovers in Istanbul with a trusted team and premium patient experience.
@@ -382,9 +379,16 @@ export default function AnastamarDentalClinicHomepage() {
               Treatment Journey
             </h3>
             <div className="mt-8 space-y-8 border-l-4 border-white/50 pl-8">
-              {processSteps.map((step) => (
-                <div key={step.title} className="relative">
-                  <span className="absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#7dd0f2]" />
+              {processSteps.map((step, index) => (
+                <div
+                  key={step.title}
+                  className="step-blink relative"
+                  style={{ animationDelay: `${index * 0.25}s` }}
+                >
+                  <span
+                    className="step-blink-dot absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#7dd0f2]"
+                    style={{ animationDelay: `${index * 0.25}s` }}
+                  />
                   <h4 className="text-3xl font-semibold leading-tight">{step.title}</h4>
                   <p className="mt-2 text-xl leading-9 text-white/95">{step.text}</p>
                 </div>
