@@ -23,11 +23,11 @@ export default function Footer() {
           
          {/* Logo and Contact Column */}
           <div className="flex flex-col pt-2">
-            <div className="relative h-[330px] sm:h-[150px]">
+            <div className="relative h-[340px] sm:h-[180px]">
               <img
                 src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="absolute left-[-12px] top-[-34px] h-[190px] w-auto max-w-none object-contain pointer-events-none sm:h-[220px]"
+                className="absolute left-[-20px] top-[-52px] h-[250px] w-auto max-w-none object-contain pointer-events-none sm:h-[290px]"
               />
             </div>
 

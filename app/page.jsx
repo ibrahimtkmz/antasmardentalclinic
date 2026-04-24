@@ -97,27 +97,22 @@ export default function AnastamarDentalClinicHomepage() {
     {
       title: 'International Insurance Support',
       text: 'We guide you through your insurance coverage and reimbursement procedures with clarity and confidence.',
-      icon: '✅',
     },
     {
       title: 'Transparent Pricing',
       text: 'Before treatment begins, we provide a clear and detailed cost plan covering all expenses.',
-      icon: '%',
     },
     {
       title: 'Feel Secure',
       text: 'A dedicated patient coordinator personally guides you through all insurance and payment processes.',
-      icon: '🤝',
     },
     {
       title: 'Guaranteed Treatment Quality',
       text: 'We offer guarantee conditions for our treatments performed using materials that meet international standards.',
-      icon: '⭐',
     },
     {
       title: 'Multilingual Communication',
       text: 'You can communicate directly with our expert doctors and team in your own language at every stage.',
-      icon: '🌐',
     },
   ];
 
@@ -417,7 +412,6 @@ export default function AnastamarDentalClinicHomepage() {
                 <h4 className="text-2xl font-bold leading-snug md:text-3xl">{card.title}</h4>
                 <div className="mx-auto my-5 h-1 w-28 bg-white/85 md:my-6 md:w-32" />
                 <p className="text-lg leading-8 text-white/95 md:text-xl md:leading-9">{card.text}</p>
-                <div className="mt-7 text-5xl md:mt-8 md:text-6xl">{card.icon}</div>
               </article>
             ))}
           </div>
@@ -466,8 +460,8 @@ export default function AnastamarDentalClinicHomepage() {
 
           <div className="relative min-h-[520px]">
             <img
-              src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80"
-              alt="Contact representative"
+              src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=80"
+              alt="Dentist consulting patient"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#d5edf5]/5 to-transparent" />
