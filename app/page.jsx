@@ -152,22 +152,22 @@ export default function AnastamarDentalClinicHomepage() {
 
         <Header />
 
-        <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-12 pt-16 text-white md:px-6 md:pb-16 md:pt-20">
+        <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-20 text-white md:px-6">
           <div className="max-w-3xl">
             <p className="mb-4 inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6] md:text-base">
               Premium Smile Design & Implant Solutions
             </p>
-            <h1 className="text-3xl font-black leading-tight sm:text-4xl md:text-7xl">
+            <h1 className="text-5xl font-black leading-tight md:text-7xl">
               From Consultation to Perfection
               <br />
               Your Smile Journey Starts Here
             </h1>
-            <p className="mt-5 max-w-2xl text-base text-white/85 sm:text-lg md:mt-6 md:text-xl">
+            <p className="mt-6 max-w-2xl text-lg text-white/85 md:text-xl">
               Anastamar Dental Clinic delivers advanced cosmetic dentistry, implants and smile makeovers in Istanbul with a trusted team and premium patient experience.
             </p>
           </div>
 
-          <div id="contact" className="mt-8 rounded-[28px] bg-white/92 p-4 shadow-2xl backdrop-blur md:mt-12 md:p-5">
+          <div id="contact" className="mt-12 rounded-[28px] bg-white/92 p-4 shadow-2xl backdrop-blur md:p-5">
             <div className="grid gap-3 md:grid-cols-[1fr_1fr_220px]">
               <input
                 className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
@@ -185,13 +185,13 @@ export default function AnastamarDentalClinicHomepage() {
         </section>
       </div>
 
-      <main className="page-shell -mt-4 px-3 pb-14 md:-mt-6 md:px-6">
+      <main className="page-shell -mt-6 px-3 pb-14 md:px-6">
         <WhyClinicSection />
 
         <section id="services" className="mt-8 overflow-hidden rounded-[28px] bg-white shadow-xl">
           <div className="grid md:grid-cols-[1.08fr_1.92fr]">
-            <div className="p-6 md:p-10">
-              <h3 className="text-3xl font-black leading-tight text-[#222] sm:text-4xl md:text-5xl">
+            <div className="p-8 md:p-10">
+              <h3 className="text-5xl font-black leading-tight text-[#222]">
                 Our Dental Services In Istanbul
               </h3>
               <p className="mt-5 text-[15px] leading-7 text-[#666]">
@@ -199,9 +199,9 @@ export default function AnastamarDentalClinicHomepage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-2 md:grid-cols-3">
               {services.map((service) => (
-                <a href={service.href} key={service.title} className="group relative block h-52 overflow-hidden border border-white/20 sm:h-56 md:h-64">
+                <a href={service.href} key={service.title} className="group relative block h-56 overflow-hidden border border-white/20 md:h-64">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -232,8 +232,8 @@ export default function AnastamarDentalClinicHomepage() {
               <div className="mt-1 text-3xl font-black">+1.200</div>
             </div>
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-semibold sm:text-4xl md:text-6xl">+1.200 Real Reviews</h3>
-              <p className="mt-4 text-xl text-white/95 sm:text-2xl md:text-4xl">
+              <h3 className="text-4xl font-semibold md:text-6xl">+1.200 Real Reviews</h3>
+              <p className="mt-4 text-2xl text-white/95 md:text-4xl">
                 Curious About Our Service Quality?
                 <br />
                 Explore Our Google Reviews.
@@ -242,10 +242,10 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section id="gallery" className="mt-10 rounded-[28px] bg-white px-4 py-10 shadow-xl sm:px-6 md:px-10 md:py-12">
+        <section id="gallery" className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl font-black text-[#222] sm:text-4xl md:text-5xl">Feel The Difference</h3>
-            <p className="mt-2 text-base text-[#666] sm:text-lg md:text-xl">Our state of the art clinic, our dedicated team, your stunning smile</p>
+            <h3 className="text-5xl font-black text-[#222]">Feel The Difference</h3>
+            <p className="mt-2 text-xl text-[#666]">Our state of the art clinic, our dedicated team, your stunning smile</p>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-5">
             {gallery.map((image, index) => (
@@ -259,10 +259,10 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section id="doctors" className="mt-10 rounded-[28px] bg-white px-4 py-10 shadow-xl sm:px-6 md:px-10 md:py-12">
+        <section id="doctors" className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl font-black text-[#222] sm:text-4xl md:text-5xl">Meet The Team Behind Your Beautiful Smile</h3>
-            <p className="mt-2 text-base text-[#666] sm:text-lg md:text-xl">Your trusted dental partners. Your smile is our passion</p>
+            <h3 className="text-5xl font-black text-[#222]">Meet The Team Behind Your Beautiful Smile</h3>
+            <p className="mt-2 text-xl text-[#666]">Your trusted dental partners. Your smile is our passion</p>
           </div>
 
           <div className="mt-12 grid gap-10 md:grid-cols-3">
@@ -286,17 +286,17 @@ export default function AnastamarDentalClinicHomepage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#2f3940]/90 via-[#5a7a88]/80 to-[#97b8cc]/75" />
 
-          <div className="relative grid gap-8 px-4 py-10 text-white sm:px-6 md:grid-cols-[1.2fr_0.8fr] md:gap-10 md:px-12 md:py-16">
+          <div className="relative grid gap-10 px-6 py-12 text-white md:grid-cols-[1.2fr_0.8fr] md:px-12 md:py-16">
             <div>
-              <h3 className="max-w-3xl text-3xl font-black leading-tight sm:text-4xl md:text-7xl">
+              <h3 className="max-w-3xl text-4xl font-black leading-tight md:text-7xl">
                 Comfortable Treatment,
                 <br />
                 Trusted Results
               </h3>
-              <h4 className="mt-4 text-2xl font-medium leading-tight sm:text-3xl md:text-6xl">
+              <h4 className="mt-4 text-3xl font-medium leading-tight md:text-6xl">
                 The Istanbul Dental Center Difference
               </h4>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-white/90 sm:text-lg md:mt-8 md:text-3xl md:leading-[1.45]">
+              <p className="mt-8 max-w-2xl text-lg leading-9 text-white/90 md:text-3xl md:leading-[1.45]">
                 At Istanbul Dental Center, we safeguard your smile at every step with our standards of quality, hygiene, and expertise.
                 Through personalized treatment plans and our professional team, we deliver comfortable care and long-lasting results.
               </p>
@@ -312,10 +312,10 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-4 py-10 shadow-xl sm:px-6 md:px-10 md:py-12">
+        <section className="mt-10 rounded-[28px] bg-[#f2f4f7] px-6 py-12 shadow-xl md:px-10">
           <div className="mx-auto max-w-3xl text-center">
-            <h3 className="text-3xl font-black text-[#171b21] sm:text-4xl md:text-5xl">Testimonials</h3>
-            <p className="mt-3 text-base text-[#4a5765] sm:text-lg md:text-xl">
+            <h3 className="text-5xl font-black text-[#171b21]">Testimonials</h3>
+            <p className="mt-3 text-xl text-[#4a5765]">
               Find out how Anastamar Dental Clinic has helped people boost their confidence and smile happily.
             </p>
           </div>
@@ -323,7 +323,7 @@ export default function AnastamarDentalClinicHomepage() {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {testimonials.map((item) => (
               <article key={item.name} className="rounded-[30px] bg-[#d5edf5] p-7">
-                <p className="text-base leading-7 text-[#1f2a37] md:text-[20px] md:leading-9">{item.text}</p>
+                <p className="text-[20px] leading-9 text-[#1f2a37]">{item.text}</p>
                 <div className="mt-8 font-bold text-[#1c2430]">{item.name}</div>
                 <div className="mt-1 flex items-center gap-2 text-lg text-[#445260]">
                   <span>{item.flag}</span>
@@ -381,7 +381,7 @@ export default function AnastamarDentalClinicHomepage() {
 
         <section className="mt-10 grid gap-6 md:grid-cols-[1.05fr_1fr]">
           <div className="rounded-[30px] bg-[#58bce8] p-8 text-white shadow-xl md:p-10">
-            <h3 className="text-3xl font-black leading-tight sm:text-4xl md:text-6xl">
+            <h3 className="text-5xl font-black leading-tight md:text-6xl">
               Step-by-Step
               <br />
               Treatment Journey
@@ -390,8 +390,8 @@ export default function AnastamarDentalClinicHomepage() {
               {processSteps.map((step) => (
                 <div key={step.title} className="relative">
                   <span className="absolute -left-[42px] top-2 h-6 w-6 rounded-full border-4 border-white/50 bg-[#7dd0f2]" />
-                  <h4 className="text-2xl font-semibold leading-tight md:text-3xl">{step.title}</h4>
-                  <p className="mt-2 text-base leading-7 text-white/95 md:text-xl md:leading-9">{step.text}</p>
+                  <h4 className="text-3xl font-semibold leading-tight">{step.title}</h4>
+                  <p className="mt-2 text-xl leading-9 text-white/95">{step.text}</p>
                 </div>
               ))}
             </div>
@@ -424,9 +424,9 @@ export default function AnastamarDentalClinicHomepage() {
         </section>
 
         <section className="mt-10 overflow-hidden rounded-[28px] bg-[#d5edf5] shadow-xl md:grid md:grid-cols-[1.08fr_0.92fr]">
-          <div className="p-5 sm:p-8 md:p-12">
-            <h3 className="text-4xl font-black leading-none text-[#111827] sm:text-5xl md:text-6xl">Contact Us</h3>
-            <p className="mt-5 max-w-xl text-xl leading-[1.25] text-[#182433] sm:text-2xl md:mt-6 md:text-[32px]">
+          <div className="p-8 md:p-12">
+            <h3 className="text-6xl font-black leading-none text-[#111827]">Contact Us</h3>
+            <p className="mt-6 max-w-xl text-[32px] leading-[1.25] text-[#182433]">
               Begin the journey to improving your self-esteem. Contact us today and let&apos;s discuss how we can help you.
             </p>
 
@@ -438,7 +438,7 @@ export default function AnastamarDentalClinicHomepage() {
                 <option>United Kingdom</option>
                 <option>United States</option>
               </select>
-              <div className="grid grid-cols-[92px_1fr] overflow-hidden rounded-2xl border border-[#c8d9df] bg-[#f4f7f9] sm:grid-cols-[110px_1fr]">
+              <div className="grid grid-cols-[110px_1fr] overflow-hidden rounded-2xl border border-[#c8d9df] bg-[#f4f7f9]">
                 <div className="grid place-items-center border-r border-[#c8d9df] text-[#111827]">🇹🇷 +90</div>
                 <input className="h-14 bg-transparent px-5 text-[#111827] outline-none" placeholder="0501 234 56 78" />
               </div>
@@ -447,7 +447,7 @@ export default function AnastamarDentalClinicHomepage() {
                 <option>Hollywood Smile</option>
                 <option>Implant</option>
               </select>
-              <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] text-xl font-bold text-[#0b2440] sm:text-2xl">
+              <button className="h-14 w-full rounded-2xl bg-gradient-to-r from-[#6fd4ef] to-[#6aa8f1] text-2xl font-bold text-[#0b2440]">
                 Submit
               </button>
             </div>
@@ -464,7 +464,7 @@ export default function AnastamarDentalClinicHomepage() {
             </div>
           </div>
 
-          <div className="relative min-h-[320px] md:min-h-[520px]">
+          <div className="relative min-h-[520px]">
             <img
               src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1200&q=80"
               alt="Contact representative"
@@ -474,10 +474,10 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-white px-4 py-10 shadow-xl sm:px-6 md:px-10 md:py-12">
+        <section className="mt-10 rounded-[28px] bg-white px-6 py-12 shadow-xl md:px-10">
           <div className="text-center">
-            <h3 className="text-3xl font-black text-[#222] sm:text-4xl md:text-5xl">Got Questions? We’ve Got Answers</h3>
-            <p className="mt-2 text-base text-[#666] sm:text-lg md:text-xl">Explore the most asked questions and get quick solutions</p>
+            <h3 className="text-5xl font-black text-[#222]">Got Questions? We’ve Got Answers</h3>
+            <p className="mt-2 text-xl text-[#666]">Explore the most asked questions and get quick solutions</p>
           </div>
 
           <div className="mt-10 space-y-3">
