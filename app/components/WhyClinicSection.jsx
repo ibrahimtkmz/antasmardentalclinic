@@ -45,13 +45,13 @@ export default function WhyClinicSection() {
           <button className="mt-8 font-semibold text-[#109f93]">Learn More</button>
         </div>
 
-        <div className="grid gap-4 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-6">
+        <div className="grid grid-cols-3 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4">
           {clinicVideos.map((video) => (
             <button
               key={video.src}
               type="button"
               onClick={() => setActiveVideo(video.src)}
-              className="group relative overflow-hidden rounded-2xl border border-white/80 bg-black shadow-lg transition hover:scale-[1.01]"
+              className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/80 bg-black shadow-lg transition hover:scale-[1.01]"
             >
               <video src={video.src} muted playsInline className="h-full w-full object-cover opacity-85 transition group-hover:opacity-100" />
               <div className="absolute inset-0 flex items-center justify-center bg-black/25">
