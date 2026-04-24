@@ -97,22 +97,27 @@ export default function AnastamarDentalClinicHomepage() {
     {
       title: 'International Insurance Support',
       text: 'We guide you through your insurance coverage and reimbursement procedures with clarity and confidence.',
+      icon: '✅',
     },
     {
       title: 'Transparent Pricing',
       text: 'Before treatment begins, we provide a clear and detailed cost plan covering all expenses.',
+      icon: '%',
     },
     {
       title: 'Feel Secure',
       text: 'A dedicated patient coordinator personally guides you through all insurance and payment processes.',
+      icon: '🤝',
     },
     {
       title: 'Guaranteed Treatment Quality',
       text: 'We offer guarantee conditions for our treatments performed using materials that meet international standards.',
+      icon: '⭐',
     },
     {
       title: 'Multilingual Communication',
       text: 'You can communicate directly with our expert doctors and team in your own language at every stage.',
+      icon: '🌐',
     },
   ];
 
@@ -402,16 +407,17 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[28px] bg-[#efefef] px-4 py-8 shadow-xl sm:px-6 md:px-8 md:py-10">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5 md:gap-5">
+        <section className="mt-10 rounded-[28px] bg-[#efefef] px-6 py-10 shadow-xl md:px-8">
+          <div className="grid gap-5 md:grid-cols-5">
             {trustCards.map((card) => (
               <article
                 key={card.title}
                 className="rounded-[24px] bg-gradient-to-b from-[#0a1a25] via-[#275b77] to-[#57c5f0] p-5 text-center text-white shadow-lg md:p-6"
               >
-                <h4 className="text-xl font-bold leading-snug sm:text-2xl md:text-3xl">{card.title}</h4>
-                <div className="mx-auto my-4 h-1 w-24 bg-white/85 sm:my-5 sm:w-28 md:my-6 md:w-32" />
-                <p className="text-base leading-7 text-white/95 sm:text-lg sm:leading-8 md:text-xl md:leading-9">{card.text}</p>
+                <h4 className="text-2xl font-bold leading-snug md:text-3xl">{card.title}</h4>
+                <div className="mx-auto my-5 h-1 w-28 bg-white/85 md:my-6 md:w-32" />
+                <p className="text-lg leading-8 text-white/95 md:text-xl md:leading-9">{card.text}</p>
+                <div className="mt-7 text-5xl md:mt-8 md:text-6xl">{card.icon}</div>
               </article>
             ))}
           </div>
