@@ -11,13 +11,14 @@ export default function Header() {
 
   return (
     <header className="page-shell relative z-20 mt-6 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-      <div className="grid items-center gap-5 px-5 py-4 md:grid-cols-[250px_1fr_250px] md:px-6 md:py-6">
-        <div className="flex h-12 items-center justify-start md:justify-start">
-          <a href="/" className="inline-flex items-center">
+      <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_250px] md:px-6">
+
+        <div className="relative flex h-12 items-center justify-center md:justify-start">
+          <a href="/" className="absolute top-1/2 -translate-y-1/2 md:left-0">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-[88px] w-auto max-w-none object-contain md:h-[224px]"
+              className="h-[200px] w-auto max-w-none object-contain md:h-[224px]"
             />
           </a>
         </div>
@@ -58,15 +59,10 @@ export default function Header() {
             onClick={toggleMobileMenu}
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#b5ddda] bg-white text-[#1a4743] shadow-sm"
           >
-            <span className="relative block h-5 w-5">
-              {mobileMenuOpen ? (
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M6 6L18 18" />
-                  <path d="M18 6L6 18" />
-                </svg>
-              ) : (
-                <img src="/logo-beyaz.png" alt="Menu" className="h-5 w-5 object-contain" />
-              )}
+            <span className="relative block h-4 w-5">
+              <span className={`absolute left-0 top-0 h-0.5 w-5 bg-current transition ${mobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+              <span className={`absolute left-0 top-[7px] h-0.5 w-5 bg-current transition ${mobileMenuOpen ? 'opacity-0' : 'opacity-100'}`} />
+              <span className={`absolute left-0 top-[14px] h-0.5 w-5 bg-current transition ${mobileMenuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
             </span>
           </button>
         </div>
