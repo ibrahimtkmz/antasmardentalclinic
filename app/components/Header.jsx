@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="page-shell relative z-20 mt-6 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-      <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_250px] md:px-6">
+      <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_320px] md:px-6">
 
         <div className="relative flex h-12 items-center justify-center md:justify-start">
           <a href="/" className="absolute top-1/2 -translate-y-1/2 md:left-0">
@@ -47,9 +47,23 @@ export default function Header() {
         </nav>
 
         <div className="hidden justify-center md:flex md:justify-end">
-          <button className="h-10 rounded-full bg-gradient-to-b from-[#5fe2d6] to-[#16b3a7] px-6 text-[12px] font-extrabold uppercase tracking-wide text-[#053e39] shadow-[0_16px_26px_rgba(12,163,152,0.35)] transition hover:-translate-y-0.5 md:h-12 md:px-8 md:text-sm">
-            Appointment Now
-          </button>
+          <a
+            href="/contact"
+            className="group flex h-14 w-full max-w-[320px] overflow-hidden rounded-full border border-[#d8c8a0] bg-[#bba67d] shadow-[0_14px_24px_rgba(46,34,18,0.25)]"
+          >
+            <div className="flex flex-1 items-center justify-center gap-3 bg-[#193f74] px-4 text-white">
+              <span className="text-2xl leading-none">◌</span>
+              <span className="text-xl font-extrabold tracking-wide">WHATSAPP</span>
+            </div>
+            <div className="relative flex w-[108px] shrink-0 items-center justify-center bg-[#bba67d] text-white">
+              <span className="absolute left-0 top-1/2 z-10 h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 rounded-full border-[10px] border-[#c8b590] bg-[#f2f2ef] text-center text-[36px] leading-[52px] text-[#333]">•</span>
+              <span className="relative z-20 ml-6 text-[11px] font-black uppercase tracking-[0.18em] text-[#444]">contact</span>
+            </div>
+            <div className="flex flex-1 items-center justify-center gap-3 bg-[#bba67d] px-4 text-white">
+              <span className="text-xl font-extrabold tracking-wide">APPOINTMENT</span>
+              <span className="text-2xl leading-none">☑</span>
+            </div>
+          </a>
         </div>
 
         <div className="flex justify-end md:hidden">
@@ -77,12 +91,6 @@ export default function Header() {
             <a href="/doctors" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Doctors</a>
             <a href="/contact" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Contact</a>
           </nav>
-          <button
-            type="button"
-            className="mt-4 h-11 w-full rounded-full bg-gradient-to-b from-[#5fe2d6] to-[#16b3a7] px-6 text-[12px] font-extrabold uppercase tracking-wide text-[#053e39] shadow-[0_16px_26px_rgba(12,163,152,0.35)]"
-          >
-            Appointment Now
-          </button>
         </div>
       )}
     </header>
