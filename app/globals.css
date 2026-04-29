@@ -88,3 +88,42 @@ body {
 .step-blink-dot {
   animation: stepDotBlink 1.6s ease-in-out infinite;
 }
+
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 9999px;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.28);
+  z-index: 60;
+  isolation: isolate;
+}
+
+.whatsapp-float__pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.85), rgba(37, 211, 102, 0.1));
+  animation: whatsappPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.88);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.14);
+  }
+}
