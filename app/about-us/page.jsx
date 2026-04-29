@@ -5,22 +5,62 @@ export const metadata = {
   title: 'About Us | Anastamar Dental Clinic',
 };
 
+const principleCards = [
+  {
+    title: 'Mission',
+    text: 'By combining ethical values with advanced dental technology, we deliver personalized treatments that prioritize comfort, trust, and lasting outcomes for every patient.',
+  },
+  {
+    title: 'Vision',
+    text: 'To be recognized as a global destination for modern dentistry by integrating preventive care, aesthetics, surgery, and digital planning under one roof.',
+  },
+  {
+    title: 'Our Value',
+    text: 'We embrace a patient-first approach, transparent communication, scientific care protocols, and continuous innovation in all clinical and hospitality services.',
+  },
+];
+
 export default function AboutUsPage() {
   return (
-    <div className="sharp-theme min-h-screen bg-[#111111] text-[#173a36]">
-      <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
-        <Header />
-        <section className="page-shell mt-10 px-4 md:px-6 text-white">
-          <h1 className="text-4xl font-black md:text-6xl">About Us</h1>
-          <p className="mt-4 text-lg text-white/90">Anastamar Dental Clinic combines aesthetic, surgical, and digital dentistry under one roof.</p>
+    <div className="sharp-theme min-h-screen bg-[#f7f9fd] text-[#173a36]">
+      <Header />
+      <main className="page-shell space-y-8 px-3 pb-14 pt-8 md:px-6">
+        <section className="rounded-[22px] bg-gradient-to-br from-[#0f1f3a] to-[#2f5d7c] px-6 py-14 text-center text-white shadow-lg md:py-16">
+          <h1 className="text-4xl font-black md:text-6xl">About us</h1>
+          <p className="mt-4 text-sm text-white/90 md:text-base">Home / About Us</p>
         </section>
-      </div>
-      <main className="page-shell -mt-8 space-y-6 px-3 pb-14 md:px-6">
-        <section className="rounded-[28px] bg-white p-8 shadow-xl">
-          <h2 className="text-3xl font-black text-[#0c4f49]">Our Vision</h2>
-          <p className="mt-4 leading-8 text-[#426360]">To design lasting smiles by providing international patients with safe, transparent, and high-standard dental care.</p>
-          <h2 className="mt-8 text-3xl font-black text-[#0c4f49]">Our Mission</h2>
-          <p className="mt-4 leading-8 text-[#426360]">To deliver the most suitable solution for each patient’s functional and aesthetic needs through personalized treatment plans, advanced technology, and an experienced team.</p>
+
+        <section className="grid gap-6 rounded-[22px] bg-white p-5 shadow-lg md:grid-cols-2 md:p-8">
+          <img
+            src="/right-home.webp"
+            alt="Anastamar Dental Clinic lobby"
+            className="h-full min-h-[260px] w-full rounded-[18px] object-cover"
+          />
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl font-black text-[#18263f]">About Us</h2>
+            <p className="mt-5 text-base leading-8 text-[#4b5f7b]">
+              We deliver hospital-level dental care with a multidisciplinary team and contemporary clinical infrastructure. Every treatment plan is carefully designed for functionality, aesthetics, and long-term oral health.
+            </p>
+            <p className="mt-4 text-base leading-8 text-[#4b5f7b]">
+              From consultation to smile design, we maintain clear communication and personalized care to ensure a safe, comfortable, and confident treatment journey.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="/contact" className="rounded-full bg-[#17c964] px-5 py-3 text-sm font-bold text-white">Get Price Now</a>
+              <a href="/contact" className="rounded-full bg-[#345e80] px-5 py-3 text-sm font-bold text-white">Free Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-[22px] bg-[#edf2f9] px-4 py-10 md:px-8">
+          <h3 className="text-center text-4xl font-black text-[#17263f]">A Global Standard in Modern Dentistry</h3>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {principleCards.map((card) => (
+              <article key={card.title} className="rounded-2xl bg-white p-6 shadow-sm">
+                <h4 className="text-xl font-black text-[#1a2a44]">{card.title}</h4>
+                <p className="mt-4 text-sm leading-7 text-[#4d6078]">{card.text}</p>
+              </article>
+            ))}
+          </div>
         </section>
       </main>
       <Footer />
