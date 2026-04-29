@@ -1,4 +1,5 @@
 import './globals.css';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export const metadata = {
   title: 'Anastamar Dental Clinic',
@@ -9,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}<WhatsAppButton /></body>
     </html>
   );
 }
