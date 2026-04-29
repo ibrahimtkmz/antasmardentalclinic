@@ -49,20 +49,9 @@ export default function Header() {
         <div className="hidden justify-center md:flex md:justify-end">
           <a
             href="/contact"
-            className="group flex h-14 w-full max-w-[320px] overflow-hidden rounded-full border border-[#d8c8a0] bg-[#bba67d] shadow-[0_14px_24px_rgba(46,34,18,0.25)]"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-[#16b3a7] px-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]"
           >
-            <div className="flex flex-1 items-center justify-center gap-3 bg-[#193f74] px-4 text-white">
-              <span className="text-2xl leading-none">◌</span>
-              <span className="text-xl font-extrabold tracking-wide">WHATSAPP</span>
-            </div>
-            <div className="relative flex w-[108px] shrink-0 items-center justify-center bg-[#bba67d] text-white">
-              <span className="absolute left-0 top-1/2 z-10 h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 rounded-full border-[10px] border-[#c8b590] bg-[#f2f2ef] text-center text-[36px] leading-[52px] text-[#333]">•</span>
-              <span className="relative z-20 ml-6 text-[11px] font-black uppercase tracking-[0.18em] text-[#444]">contact</span>
-            </div>
-            <div className="flex flex-1 items-center justify-center gap-3 bg-[#bba67d] px-4 text-white">
-              <span className="text-xl font-extrabold tracking-wide">APPOINTMENT</span>
-              <span className="text-2xl leading-none">☑</span>
-            </div>
+            Book Appointment
           </a>
         </div>
 
