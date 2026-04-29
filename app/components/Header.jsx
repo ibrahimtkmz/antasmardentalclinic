@@ -10,7 +10,7 @@ export default function Header() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="page-shell relative z-20 mt-6 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
+    <header className="page-shell sticky top-0 z-40 mt-6 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
       <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_320px] md:px-6">
 
         <div className="relative flex h-12 items-center justify-center md:justify-start">
@@ -49,43 +49,20 @@ export default function Header() {
         <div className="hidden justify-center md:flex md:justify-end">
           <a
             href="/contact"
-            className="group relative flex h-[92px] w-full max-w-[650px] overflow-hidden rounded-[20px] bg-[#c0ab80]"
+            className="group flex h-14 w-full max-w-[320px] overflow-hidden rounded-full border border-[#d8c8a0] bg-[#bba67d] shadow-[0_14px_24px_rgba(46,34,18,0.25)]"
           >
-            <div className="flex flex-[1.25] items-center justify-center gap-4 bg-[#1f3f73] px-8 text-white">
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="h-11 w-11 shrink-0"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 11.5A9.5 9.5 0 0 1 7.4 20L3 21l1.1-4.3A9.5 9.5 0 1 1 21 11.5Z" />
-                <path d="M9.3 8.8c.3-.6.7-.6 1-.6h.4c.1 0 .4 0 .5.5l.5 1.5c.1.3.1.5 0 .7l-.4.6c-.2.2-.3.3-.1.7.2.4.9 1.5 2.2 2.1 1.7.9 1.7.6 2 .6.2 0 .9-.4 1-.8l.3-.6c.1-.2.3-.2.5-.2l1.3.6c.3.1.5.2.5.4 0 .3-.2 1.3-.9 1.8-.6.4-1.4.5-1.8.4-.5-.1-1-.3-1.4-.5-.5-.2-2-.8-3.5-2.2-1.2-1.2-1.8-2.4-2-2.8-.3-.4-.5-.9-.5-1.4 0-.6.2-1.2.5-1.6Z" />
-              </svg>
-              <span className="text-[38px] font-extrabold leading-none tracking-tight">WHATSAPP</span>
+            <div className="flex flex-1 items-center justify-center gap-3 bg-[#193f74] px-4 text-white">
+              <span className="text-2xl leading-none">◌</span>
+              <span className="text-xl font-extrabold tracking-wide">WHATSAPP</span>
             </div>
-            <div className="relative flex flex-1 items-center justify-center gap-4 bg-[#c0ab80] px-8 text-white">
-              <span className="text-[38px] font-extrabold leading-none tracking-tight">APPOINTMENT</span>
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="h-11 w-11 shrink-0"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <rect x="3" y="4" width="18" height="18" rx="1.6" />
-                <path d="M8 2.5v3M16 2.5v3M7.5 12.8l2.8 2.9 6.2-6.1" />
-              </svg>
+            <div className="relative flex w-[108px] shrink-0 items-center justify-center bg-[#bba67d] text-white">
+              <span className="absolute left-0 top-1/2 z-10 h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 rounded-full border-[10px] border-[#c8b590] bg-[#f2f2ef] text-center text-[36px] leading-[52px] text-[#333]">•</span>
+              <span className="relative z-20 ml-6 text-[11px] font-black uppercase tracking-[0.18em] text-[#444]">contact</span>
             </div>
-            <span className="absolute left-1/2 top-1/2 z-20 flex h-[88px] w-[88px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[10px] border-[#c6b58e] bg-[#ecece9] text-[#303030]">
-              <span className="text-[35px] font-extrabold leading-none lowercase">contact</span>
-            </span>
+            <div className="flex flex-1 items-center justify-center gap-3 bg-[#bba67d] px-4 text-white">
+              <span className="text-xl font-extrabold tracking-wide">APPOINTMENT</span>
+              <span className="text-2xl leading-none">☑</span>
+            </div>
           </a>
         </div>
 
