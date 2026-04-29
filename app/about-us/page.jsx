@@ -22,10 +22,10 @@ const principleCards = [
 
 export default function AboutUsPage() {
   return (
-    <div className="sharp-theme min-h-screen bg-[#f7f9fd] text-[#173a36]">
+    <div className="sharp-theme min-h-screen bg-[#f3fffd] text-[#173a36]">
       <Header />
       <main className="page-shell space-y-8 px-3 pb-14 pt-8 md:px-6">
-        <section className="rounded-[22px] bg-gradient-to-br from-[#0f1f3a] to-[#2f5d7c] px-6 py-14 text-center text-white shadow-lg md:py-16">
+        <section className="rounded-[22px] bg-gradient-to-br from-[#0f6f68] to-[#1aa69b] px-6 py-14 text-center text-white shadow-lg md:py-16">
           <h1 className="text-4xl font-black md:text-6xl">About us</h1>
           <p className="mt-4 text-sm text-white/90 md:text-base">Home / About Us</p>
         </section>
@@ -37,27 +37,27 @@ export default function AboutUsPage() {
             className="h-full min-h-[260px] w-full rounded-[18px] object-cover"
           />
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-black text-[#18263f]">About Us</h2>
-            <p className="mt-5 text-base leading-8 text-[#4b5f7b]">
+            <h2 className="text-4xl font-black text-[#0f4e49]">About Us</h2>
+            <p className="mt-5 text-base leading-8 text-[#3e6f6a]">
               We deliver hospital-level dental care with a multidisciplinary team and contemporary clinical infrastructure. Every treatment plan is carefully designed for functionality, aesthetics, and long-term oral health.
             </p>
-            <p className="mt-4 text-base leading-8 text-[#4b5f7b]">
+            <p className="mt-4 text-base leading-8 text-[#3e6f6a]">
               From consultation to smile design, we maintain clear communication and personalized care to ensure a safe, comfortable, and confident treatment journey.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="/contact" className="rounded-full bg-[#17c964] px-5 py-3 text-sm font-bold text-white">Get Price Now</a>
-              <a href="/contact" className="rounded-full bg-[#345e80] px-5 py-3 text-sm font-bold text-white">Free Consultation</a>
+              <a href="/contact" className="rounded-full bg-[#159f95] px-5 py-3 text-sm font-bold text-white">Free Consultation</a>
             </div>
           </div>
         </section>
 
-        <section className="rounded-[22px] bg-[#edf2f9] px-4 py-10 md:px-8">
-          <h3 className="text-center text-4xl font-black text-[#17263f]">A Global Standard in Modern Dentistry</h3>
+        <section className="rounded-[22px] bg-[#e7f8f6] px-4 py-10 md:px-8">
+          <h3 className="text-center text-4xl font-black text-[#0f4e49]">A Global Standard in Modern Dentistry</h3>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {principleCards.map((card) => (
               <article key={card.title} className="rounded-2xl bg-white p-6 shadow-sm">
-                <h4 className="text-xl font-black text-[#1a2a44]">{card.title}</h4>
-                <p className="mt-4 text-sm leading-7 text-[#4d6078]">{card.text}</p>
+                <h4 className="text-xl font-black text-[#0f4e49]">{card.title}</h4>
+                <p className="mt-4 text-sm leading-7 text-[#3f6c68]">{card.text}</p>
               </article>
             ))}
           </div>
