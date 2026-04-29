@@ -77,18 +77,48 @@ export default function AnastamarDentalClinicHomepage() {
       country: 'United States',
       flag: '🇺🇸',
       text: 'I’m an American, so here ya go. This facility is state of the art, clean, and perfectly organized. The team cared about my comfort through every stage, and the whole procedure felt smooth and reassuring.',
+      treatment: 'Full Mouth Rehabilitation',
+      rating: '★★★★★',
     },
     {
       name: 'John',
       country: 'United Kingdom',
       flag: '🇬🇧',
       text: 'I was worried before arriving, but from airport transfer to treatment day, everything was managed professionally. Clear communication, kind staff, and a stress-free process made this one of the best healthcare experiences I’ve had.',
+      treatment: 'Hollywood Smile',
+      rating: '★★★★★',
     },
     {
       name: 'Zain',
       country: 'United Kingdom',
       flag: '🇬🇧',
       text: 'From hotel to clinic service, every part was planned in detail. The staff were warm and highly skilled, and the final result made the journey absolutely worth it.',
+      treatment: 'Smile Makeover',
+      rating: '★★★★★',
+    },
+    {
+      name: 'Emily',
+      country: 'Canada',
+      flag: '🇨🇦',
+      text: 'The consultation was very detailed and I felt listened to from day one. My veneers look natural, and I can finally smile with confidence in photos.',
+      treatment: 'Veneers',
+      rating: '★★★★★',
+    },
+    {
+      name: 'Omar',
+      country: 'United Arab Emirates',
+      flag: '🇦🇪',
+      text: 'I came for implants and was impressed by how organized everything was. The clinic explained each step clearly and follow-up support after treatment was excellent.',
+      treatment: 'Dental Implant',
+      rating: '★★★★★',
+    },
+    {
+      name: 'Sofia',
+      country: 'Germany',
+      flag: '🇩🇪',
+      text: 'I was nervous about pain, but the team made the whole process comfortable. The result is both functional and beautiful, and recovery was easier than expected.',
+      treatment: 'Dental Crowns',
+      rating: '★★★★★',
     },
   ];
 
@@ -296,7 +326,7 @@ export default function AnastamarDentalClinicHomepage() {
 
             <div className="relative hidden overflow-hidden rounded-tl-[200px] bg-white md:block">
               <img
-                src="https://images.unsplash.com/photo-1643818650804-651c4b6ca5f6?auto=format&fit=crop&w=1000&q=80"
+                src="/right-home.webp"
                 alt="Dental specialist with tools"
                 className="h-full w-full object-cover"
               />
@@ -313,9 +343,11 @@ export default function AnastamarDentalClinicHomepage() {
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
-            {testimonials.map((item) => (
+            {testimonials.slice(0, 3).map((item) => (
               <article key={item.name} className="rounded-[30px] bg-[#d8f4f1] p-7">
                 <p className="text-[20px] leading-9 text-[#1f2a37]">{item.text}</p>
+                <div className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#0f7f76]">{item.treatment}</div>
+                <div className="mt-1 text-lg text-[#0d5e57]">{item.rating}</div>
                 <div className="mt-8 font-bold text-[#1c2430]">{item.name}</div>
                 <div className="mt-1 flex items-center gap-2 text-lg text-[#445260]">
                   <span>{item.flag}</span>
@@ -324,6 +356,26 @@ export default function AnastamarDentalClinicHomepage() {
               </article>
             ))}
           </div>
+
+          <details className="mt-5">
+            <summary className="mx-auto w-max cursor-pointer rounded-full bg-[#22c5b6] px-6 py-3 text-sm font-semibold text-white hover:bg-[#16b3a7]">
+              Daha Fazla Göster
+            </summary>
+            <div className="mt-5 grid gap-5 md:grid-cols-3">
+              {testimonials.slice(3).map((item) => (
+                <article key={item.name} className="rounded-[30px] bg-[#d8f4f1] p-7">
+                  <p className="text-[20px] leading-9 text-[#1f2a37]">{item.text}</p>
+                  <div className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#0f7f76]">{item.treatment}</div>
+                  <div className="mt-1 text-lg text-[#0d5e57]">{item.rating}</div>
+                  <div className="mt-8 font-bold text-[#1c2430]">{item.name}</div>
+                  <div className="mt-1 flex items-center gap-2 text-lg text-[#445260]">
+                    <span>{item.flag}</span>
+                    <span>{item.country}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </details>
 
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-3 md:grid-cols-3">
             {[
