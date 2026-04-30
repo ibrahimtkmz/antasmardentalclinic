@@ -39,6 +39,15 @@ export default function Header() {
               <a href="/treatments/veneers" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
                 Veneers
               </a>
+              <a href="/treatments/dental-crowns" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+                Dental Crowns
+              </a>
+              <a href="/treatments/dental-bone-graft" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+                Dental Bone Graft
+              </a>
+              <a href="/treatments/sinus-lift" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">
+                Sinus Lift
+              </a>
             </div>
           </div>
 
@@ -77,6 +86,14 @@ export default function Header() {
             <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Home</a>
             <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">About Us</a>
             <a href="/treatments" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Treatments</a>
+            <div className="ml-3 flex flex-col gap-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#1f5f59]">
+              <a href="/treatments/hollywood-smile" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Hollywood Smile</a>
+              <a href="/treatments/dental-implant" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Dental Implant</a>
+              <a href="/treatments/veneers" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Veneers</a>
+              <a href="/treatments/dental-crowns" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Dental Crowns</a>
+              <a href="/treatments/dental-bone-graft" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Dental Bone Graft</a>
+              <a href="/treatments/sinus-lift" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Sinus Lift</a>
+            </div>
             <a href="/doctors" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Doctors</a>
             <a href="/contact" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Contact</a>
           </nav>
