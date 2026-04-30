@@ -17,12 +17,12 @@ export default function Header() {
     >
       <div className="flex items-center justify-between gap-4 px-4 py-3 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
-        <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
-          <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+        <div className="relative flex h-auto items-center justify-start overflow-visible md:h-20 md:justify-start">
+          <a href="/" className="relative m-0 block p-0 leading-none md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-20 w-auto max-w-none object-contain sm:h-24 md:h-[250px]"
+              className="m-0 block h-40 w-auto max-w-none object-contain sm:h-48 md:h-[500px]"
             />
           </a>
         </div>
