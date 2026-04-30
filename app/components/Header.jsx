@@ -10,7 +10,11 @@ export default function Header() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-white/95 shadow-sm backdrop-blur md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
+    <header
+      className={`page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] shadow-sm backdrop-blur transition-colors md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)] ${
+        mobileMenuOpen ? 'bg-white' : 'bg-transparent md:bg-[#f7fffe]'
+      }`}
+    >
       <div className="flex items-center justify-between gap-4 px-4 py-3 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
         <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
@@ -18,7 +22,7 @@ export default function Header() {
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-16 w-auto max-w-none object-contain sm:h-20 md:h-[250px]"
+              className="h-20 w-auto max-w-none object-contain sm:h-24 md:h-[250px]"
             />
           </a>
         </div>
