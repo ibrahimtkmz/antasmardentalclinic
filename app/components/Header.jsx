@@ -11,14 +11,14 @@ export default function Header() {
 
   return (
     <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-      <div className="grid items-center gap-5 px-5 py-6 md:grid-cols-[250px_1fr_320px] md:px-6">
+      <div className="grid items-center gap-4 px-4 py-4 md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
-        <div className="relative flex h-12 items-center justify-center md:justify-start">
-          <a href="/" className="absolute top-1/2 -translate-y-1/2 md:left-0">
+        <div className="relative flex h-11 items-center justify-start md:h-12 md:justify-start">
+          <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-[200px] w-auto max-w-none object-contain md:h-[224px]"
+              className="h-14 w-auto max-w-none object-contain sm:h-16 md:h-[224px]"
             />
           </a>
         </div>
@@ -64,12 +64,12 @@ export default function Header() {
           </a>
         </div>
 
-        <div className="flex justify-end md:hidden">
+        <div className="flex items-center justify-end md:hidden">
           <button
             type="button"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             onClick={toggleMobileMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#b5ddda] bg-white text-[#1a4743] shadow-sm"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#b5ddda] bg-white text-[#1a4743] shadow-sm"
           >
             <span className="relative block h-4 w-5">
               <span className={`absolute left-0 top-0 h-0.5 w-5 bg-current transition ${mobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
