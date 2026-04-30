@@ -10,7 +10,7 @@ export default function Header() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
+    <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-transparent bg-transparent shadow-none md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
       <div className="flex items-center justify-between gap-4 px-4 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
         <div className="relative flex h-16 items-center justify-start md:h-20 md:justify-start">
