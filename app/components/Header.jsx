@@ -10,15 +10,15 @@ export default function Header() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-transparent bg-transparent shadow-none md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
-      <div className="flex items-center justify-between gap-4 px-4 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
+    <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-white/95 shadow-sm backdrop-blur md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
+      <div className="flex items-center justify-between gap-4 px-4 py-3 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
-        <div className="relative flex h-60 items-center justify-start md:h-20 md:justify-start">
+        <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
           <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-60 w-auto max-w-none object-contain sm:h-72 md:h-[250px]"
+              className="h-16 w-auto max-w-none object-contain sm:h-20 md:h-[250px]"
             />
           </a>
         </div>
@@ -81,7 +81,7 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-[#d9ecea] px-5 pb-6 pt-4 md:hidden">
+        <div className="border-t border-[#d9ecea] bg-white px-5 pb-6 pt-4 md:hidden">
           <nav className="flex flex-col gap-3 text-sm font-bold uppercase tracking-wide text-[#1a4743]">
             <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Home</a>
             <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">About Us</a>
