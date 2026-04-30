@@ -13,12 +13,12 @@ export default function Header() {
     <header className="page-shell sticky top-0 z-50 mt-0 rounded-[0_0_26px_26px] border border-[#d9ecea] bg-[#f7fffe] shadow-[0_14px_36px_rgba(8,41,38,0.12)]">
       <div className="flex items-center justify-between gap-4 px-4 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
-        <div className="relative flex h-11 items-center justify-start md:h-12 md:justify-start">
+        <div className="relative flex h-16 items-center justify-start md:h-20 md:justify-start">
           <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-14 w-auto max-w-none object-contain sm:h-16 md:h-[224px]"
+              className="h-20 w-auto max-w-none object-contain sm:h-24 md:h-[250px]"
             />
           </a>
         </div>
