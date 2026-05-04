@@ -55,21 +55,18 @@ export default function AnastamarDentalClinicHomepage() {
 
   const doctors = [
     {
-      name: 'Dr. Ahmet Yılmaz',
-      role: 'Cosmetic Dentist',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80',
+      name: 'Dt. Yusuf Yuca',
+      role: 'Medical Team',
+      image: '/right-home.webp',
     },
     {
-      name: 'Dr. Elif Kaya',
-      role: 'Cosmetic Dentist',
-      image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      name: 'Dr. Can Demir',
-      role: 'Surgical Dentist',
-      image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80',
+      name: 'Medical Team',
+      role: 'Anastamar Dental Clinic',
+      image: '/right-home.webp',
     },
   ];
+
+
 
   const testimonials = [
     {
