@@ -20,7 +20,7 @@ export default function Header() {
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-12 w-auto max-w-none object-contain sm:h-14 md:h-[250px]"
+              className="h-12 w-auto max-w-none origin-left scale-[3] object-contain sm:h-14 md:h-[250px] md:scale-100"
             />
           </a>
         </div>
