@@ -11,11 +11,11 @@ export default function Header() {
 
   return (
     <header
-      className={`page-shell sticky top-0 z-50 mt-0 border border-[#d9ecea] shadow-sm backdrop-blur transition-colors md:rounded-[0_0_26px_26px] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)] ${
-        mobileMenuOpen ? 'rounded-[0_0_26px_26px] bg-white' : 'rounded-[0_0_26px_26px] bg-transparent md:bg-[#f7fffe]'
+      className={`page-shell sticky top-0 z-50 mt-0 bg-transparent transition-colors md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)] ${
+        mobileMenuOpen ? 'rounded-[0_0_26px_26px] md:bg-[#f7fffe]' : 'rounded-[0_0_26px_26px] bg-transparent md:bg-[#f7fffe]'
       }`}
     >
-      <div className="flex items-center justify-between gap-3 rounded-b-[42px] bg-[#159c95] px-5 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:rounded-none md:bg-transparent md:px-6 md:py-6">
+      <div className="flex items-center justify-between gap-3 px-5 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:rounded-none md:bg-transparent md:px-6 md:py-6">
 
         <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
           <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
@@ -56,7 +56,7 @@ export default function Header() {
             type="button"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             onClick={toggleMobileMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-white"
+            className="inline-flex h-11 w-11 items-center justify-center text-[#1a4743]"
           >
             <span className="relative block h-4 w-6">
               <span className={`absolute left-0 top-0 h-0.5 w-6 rounded-full bg-current transition ${mobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
