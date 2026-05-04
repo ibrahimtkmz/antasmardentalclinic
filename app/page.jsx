@@ -56,7 +56,7 @@ export default function AnastamarDentalClinicHomepage() {
   const doctors = [
     {
       name: 'Dt. Yusuf Yuca',
-      role: 'Medical Team',
+      role: '',
       image: '/right-home.webp',
     },
     {
