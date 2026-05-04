@@ -15,14 +15,14 @@ export default function Header() {
         mobileMenuOpen ? 'bg-white' : 'bg-transparent md:bg-[#f7fffe]'
       }`}
     >
-      <div className="flex items-center justify-between gap-4 px-4 py-3 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
+      <div className="flex items-center justify-between gap-3 px-3 py-2.5 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:px-6 md:py-6">
 
         <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
           <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-20 w-auto max-w-none object-contain sm:h-24 md:h-[250px]"
+              className="h-14 w-auto max-w-none object-contain sm:h-16 md:h-[250px]"
             />
           </a>
         </div>
@@ -73,7 +73,7 @@ export default function Header() {
             type="button"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             onClick={toggleMobileMenu}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#b5ddda] bg-white text-[#1a4743] shadow-sm"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[#b5ddda] bg-gradient-to-b from-white to-[#ebf8f6] text-[#1a4743] shadow-[0_8px_18px_rgba(13,93,86,0.18)]"
           >
             <span className="relative block h-4 w-5">
               <span className={`absolute left-0 top-0 h-0.5 w-5 bg-current transition ${mobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
@@ -85,8 +85,8 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-[#d9ecea] bg-white px-5 pb-6 pt-4 md:hidden">
-          <nav className="flex flex-col gap-3 text-sm font-bold uppercase tracking-wide text-[#1a4743]">
+        <div className="border-t border-[#d9ecea] bg-gradient-to-b from-white to-[#f3fffd] px-4 pb-6 pt-4 md:hidden">
+          <nav className="flex flex-col gap-2 rounded-2xl border border-[#d9ecea] bg-white p-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] shadow-sm">
             <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Home</a>
             <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">About Us</a>
             <a href="/treatments" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Treatments</a>
