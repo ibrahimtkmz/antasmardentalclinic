@@ -11,9 +11,7 @@ export default function Header() {
 
   return (
     <header
-      className={`page-shell sticky top-0 z-50 mt-0 bg-transparent transition-colors md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)] ${
-        mobileMenuOpen ? 'rounded-[0_0_26px_26px] md:bg-[#f7fffe]' : 'rounded-[0_0_26px_26px] bg-transparent md:bg-[#f7fffe]'
-      }`}
+      className="page-shell sticky top-0 z-50 mt-0 bg-transparent transition-colors md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]"
     >
       <div className="flex items-center justify-between gap-3 px-5 py-4 md:grid md:grid-cols-[250px_1fr_320px] md:gap-5 md:rounded-none md:bg-transparent md:px-6 md:py-6">
 
@@ -68,7 +66,7 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-[#d9ecea] bg-gradient-to-b from-white to-[#f3fffd] px-4 pb-6 pt-4 md:hidden">
+        <div className="bg-transparent px-4 pb-6 pt-4 md:hidden">
           <nav className="flex flex-col gap-2 rounded-2xl border border-[#d9ecea] bg-white p-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] shadow-sm">
             <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Home</a>
             <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">About Us</a>
