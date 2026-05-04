@@ -22,12 +22,12 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] items-start">
           
          {/* Logo and Contact Column */}
-          <div className="flex flex-col pt-2">
-            <div className="relative h-[340px] sm:h-[180px]">
+          <div className="flex flex-col items-center text-center pt-2 sm:items-start sm:text-left">
+            <div className="relative h-[340px] w-full sm:h-[180px]">
               <img
                 src="/logo-beyaz.png"
                 alt="Anastamar Dental Clinic Logo"
-                className="absolute left-[-20px] top-[-52px] h-[250px] w-auto max-w-none object-contain pointer-events-none sm:h-[290px]"
+                className="absolute left-1/2 top-[-52px] h-[250px] w-auto max-w-none -translate-x-1/2 object-contain pointer-events-none sm:left-[-20px] sm:translate-x-0 sm:h-[290px]"
               />
             </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           {/* Right Visual */}
-          <div className="relative min-h-[430px] overflow-hidden rounded-[24px] bg-[#010f1f] p-2 shadow-2xl">
+          <div className="relative hidden min-h-[215px] w-1/2 justify-self-center overflow-hidden rounded-[24px] bg-[#010f1f] p-2 shadow-2xl lg:block">
             <img
               src="/footer-image.png"
               alt="Anastamar Dental Clinic Footer Image"
