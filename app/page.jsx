@@ -55,14 +55,14 @@ export default function AnastamarDentalClinicHomepage() {
 
   const doctors = [
     {
-      name: 'Dt. Yusuf Yuca',
-      role: '',
-      image: '/right-home.webp',
+      name: 'Dt. Osman Binan',
+      role: 'Protetik ve Estetik Diş Hekimliği',
+      image: '/osman-binan.png',
     },
     {
-      name: 'Medical Team',
-      role: 'Anastamar Dental Clinic',
-      image: '/right-home.webp',
+      name: 'Dr. Yusuf Yuca',
+      role: 'Ağız, Diş ve Çene Cerrahisi',
+      image: '/yusuf-yuca.png',
     },
   ];
 
@@ -284,7 +284,7 @@ export default function AnastamarDentalClinicHomepage() {
             <p className="mt-2 text-xl text-[#666]">Your trusted dental partners. Your smile is our passion</p>
           </div>
 
-          <div className="mt-12 grid gap-10 md:grid-cols-3">
+          <div className="mt-12 grid gap-10 md:grid-cols-2">
             {doctors.map((doctor) => (
               <div key={doctor.name} className="text-center">
                 <div className="mx-auto h-56 w-56 overflow-hidden rounded-[28px] bg-[#f4f4f4] shadow-lg">
