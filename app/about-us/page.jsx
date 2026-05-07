@@ -39,7 +39,7 @@ export default function AboutUsPage() {
             className="h-full min-h-[260px] w-full rounded-[18px] object-cover"
           />
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-black text-[#0f4e49]">About Us</h2>
+            <h2 className="text-4xl font-black text-[#0f4e49]">{t.aboutHeading}</h2>
             <p className="mt-5 text-base leading-8 text-[#3e6f6a]">
               We deliver hospital-level dental care with a multidisciplinary team and contemporary clinical infrastructure. Every treatment plan is carefully designed for functionality, aesthetics, and long-term oral health.
             </p>
@@ -47,8 +47,8 @@ export default function AboutUsPage() {
               From consultation to smile design, we maintain clear communication and personalized care to ensure a safe, comfortable, and confident treatment journey.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/contact" className="rounded-full bg-[#17c964] px-5 py-3 text-sm font-bold text-white">Get Price Now</a>
-              <a href="/contact" className="rounded-full bg-[#159f95] px-5 py-3 text-sm font-bold text-white">Free Consultation</a>
+              <a href="/contact" className="rounded-full bg-[#17c964] px-5 py-3 text-sm font-bold text-white">{t.getPrice}</a>
+              <a href="/contact" className="rounded-full bg-[#159f95] px-5 py-3 text-sm font-bold text-white">{t.freeConsultation}</a>
             </div>
           </div>
         </section>

@@ -1,8 +1,12 @@
+'use client';
+
+import { useLanguage } from './components/LanguageProvider';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhyClinicSection from './components/WhyClinicSection';
 
 export default function AnastamarDentalClinicHomepage() {
+  const { t } = useLanguage();
   const processSteps = [
     {
       title: 'Free Examination and Check-Up',
@@ -177,12 +181,12 @@ export default function AnastamarDentalClinicHomepage() {
         <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-20 text-white md:px-6">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-black leading-tight md:text-7xl">
-              From Consultation to Perfection
+              {t.homeHeadline1}
               <br />
-              <span className="wave-gradient-text">Your Smile Journey Starts Here</span>
+              <span className="wave-gradient-text">{t.homeHeadline2}</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/85 md:text-xl">
-              Anastamar Dental Clinic delivers advanced cosmetic dentistry, implants and smile makeovers in Istanbul with a trusted team and premium patient experience.
+              {t.homeLead}
             </p>
           </div>
 
@@ -190,14 +194,14 @@ export default function AnastamarDentalClinicHomepage() {
             <div className="grid gap-3 md:grid-cols-[1fr_1fr_220px]">
               <input
                 className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
-                placeholder="Enter your full name"
+                placeholder={t.formName}
               />
               <input
                 className="h-14 rounded-full border border-[#c9efe9] bg-[#18b2a6] px-6 text-white placeholder:text-white/85 outline-none"
-                placeholder="Enter your phone number"
+                placeholder={t.formPhone}
               />
               <button className="h-14 rounded-full bg-[#5fe2d6] px-6 font-bold text-[#083a36] transition hover:scale-[1.01] hover:shadow-[0_12px_32px_rgba(3,58,55,0.35)]">
-                Submit Now
+                {t.submitNow}
               </button>
             </div>
           </div>
