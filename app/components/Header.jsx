@@ -6,6 +6,7 @@ import { LANGUAGES, useLanguage } from './LanguageProvider';
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, language, changeLanguage } = useLanguage();
+  const [languageOpen, setLanguageOpen] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
 
@@ -48,17 +49,15 @@ export default function Header() {
         </nav>
 
         
-        <div className="hidden items-center gap-2 md:flex">
-          {LANGUAGES.map((lang) => (
-            <button
-              key={lang.code}
-              type="button"
-              onClick={() => changeLanguage(lang.code)}
-              className={`rounded-full border px-3 py-1 text-xs font-bold ${language === lang.code ? 'border-[#16b3a7] bg-[#16b3a7] text-white' : 'border-[#b7d8d4] text-[#1a4743]'}`}
-            >
-              {lang.icon}
-            </button>
-          ))}
+        <div className="relative hidden items-center md:flex">
+          <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#b7d8d4] text-lg">🌐</button>
+          {languageOpen && (
+            <div className="absolute right-0 top-12 z-40 min-w-36 rounded-xl border border-[#d8efec] bg-white p-1 shadow-lg">
+              {LANGUAGES.map((lang) => (
+                <button key={lang.code} type="button" onClick={() => { changeLanguage(lang.code); setLanguageOpen(false); }} className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-sm ${language === lang.code ? 'bg-[#eaf9f7] text-[#0f8b80]' : 'text-[#1a4743]'}`}>{lang.icon} {lang.label}</button>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="hidden justify-center md:flex md:justify-end">
@@ -98,10 +97,13 @@ export default function Header() {
             <a href="/doctors" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navDoctors}</a>
             <a href="/contact" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navContact}</a>
           </nav>
-            <div className="mt-2 flex gap-2">
+            <div className="mt-2">
+              <div className="text-xs font-semibold text-[#1a4743]">{t.language}</div>
+              <div className="mt-1 flex gap-2">
               {LANGUAGES.map((lang) => (
                 <button key={lang.code} type="button" onClick={() => changeLanguage(lang.code)} className={`rounded-full border px-3 py-1 text-xs ${language === lang.code ? 'border-[#16b3a7] bg-[#16b3a7] text-white' : 'border-[#c8e3df] text-[#1a4743]'}`}>{lang.icon} {lang.code.toUpperCase()}</button>
               ))}
+              </div>
             </div>
 
         </div>
