@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header
-      className="page-shell sticky top-0 z-50 mt-0 bg-transparent transition-colors md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_10px_24px_rgba(8,41,38,0.1)]"
+      className="page-shell sticky top-0 z-50 mt-0 bg-transparent pt-[20%] transition-colors md:pt-0 md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_10px_24px_rgba(8,41,38,0.1)]"
     >
       <div className="flex items-center justify-between gap-3 px-5 py-1.5 md:gap-6 md:px-8 md:py-2">
 
@@ -64,18 +64,16 @@ export default function Header() {
           <a href="/contact" className="inline-flex h-10 items-center justify-center rounded-full bg-[#16b3a7] px-5 text-xs font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]">{t.book}</a>
         </div>
 
-        <div className="-mt-1 mr-1 flex items-center md:hidden">
+        <div className="ml-auto -mt-1 flex items-center gap-1 md:hidden">
           <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black text-base">🌐</button>
           {languageOpen && (
-            <div className="absolute right-16 top-11 z-40 min-w-32 rounded-xl border border-[#d8efec] bg-white p-1 shadow-lg">
+            <div className="absolute right-14 top-11 z-40 min-w-32 rounded-xl border border-[#d8efec] bg-white p-1 shadow-lg">
               {LANGUAGES.map((lang) => (
                 <button key={lang.code} type="button" onClick={() => { changeLanguage(lang.code); setLanguageOpen(false); }} className={`flex w-full items-center gap-2 rounded-lg px-3 py-2 text-left text-xs ${language === lang.code ? 'bg-[#eaf9f7] text-[#0f8b80]' : 'text-[#1a4743]'}`}>{lang.icon} {lang.code.toUpperCase()}</button>
               ))}
             </div>
           )}
-        </div>
 
-        <div className="-mt-1 flex items-center justify-end md:hidden">
           <button
             type="button"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
