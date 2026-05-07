@@ -49,7 +49,7 @@ export default function WhyClinicSection() {
           <button className="mt-8 font-semibold text-[#109f93]">{t.learnMore}</button>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4 sm:grid-cols-2 lg:grid-cols-2">
           {clinicVideos.map((video) => (
             <button
               key={video.src}
