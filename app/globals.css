@@ -127,3 +127,19 @@ body {
     transform: scale(1.14);
   }
 }
+
+
+/* Google Translate floating UI cleanup */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+.skiptranslate iframe {
+  visibility: hidden !important;
+}
