@@ -7,6 +7,8 @@ const clinicVideos = [
   { src: '/1.mp4', label: 'Clinic Tour Video 1' },
   { src: '/2.mp4', label: 'Clinic Tour Video 2' },
   { src: '/3.mp4', label: 'Clinic Tour Video 3' },
+  { src: '/anasayfa-video1.mp4', label: 'Homepage Video 1' },
+  { src: '/anasayfa-video2.mp4', label: 'Homepage Video 2' },
 ];
 
 export default function WhyClinicSection() {
@@ -47,7 +49,7 @@ export default function WhyClinicSection() {
           <button className="mt-8 font-semibold text-[#109f93]">{t.learnMore}</button>
         </div>
 
-        <div className="grid grid-cols-3 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4">
+        <div className="grid grid-cols-2 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4 sm:grid-cols-3 lg:grid-cols-5">
           {clinicVideos.map((video) => (
             <button
               key={video.src}
