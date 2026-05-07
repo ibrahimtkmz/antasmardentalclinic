@@ -16,7 +16,8 @@ export default function WhyClinicSection() {
   const [showMoreVideos, setShowMoreVideos] = useState(false);
   const { t } = useLanguage();
 
-  const visibleVideos = showMoreVideos ? clinicVideos.slice(0, 4) : clinicVideos.slice(0, 1);
+  const visibleVideos = showMoreVideos ? clinicVideos : clinicVideos.slice(0, 4);
+  const hasMoreThanFourVideos = clinicVideos.length > 4;
 
   return (
     <>
@@ -70,7 +71,7 @@ export default function WhyClinicSection() {
           ))}
         </div>
 
-        {!showMoreVideos && (
+        {!showMoreVideos && hasMoreThanFourVideos && (
           <div className="col-span-2 px-4 pb-4">
             <button
               type="button"
