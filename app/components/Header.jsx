@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header
-      className="page-shell sticky top-0 z-50 mt-0 bg-transparent pt-0 transition-colors md:pt-[15%] md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_10px_24px_rgba(8,41,38,0.1)]"
+      className="page-shell sticky top-0 z-50 mt-0 bg-transparent pt-[50px] transition-colors md:pt-[15px] md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_10px_24px_rgba(8,41,38,0.1)]"
     >
       <div className="flex items-center justify-between gap-3 px-5 py-1.5 md:gap-6 md:px-8 md:py-2">
 
