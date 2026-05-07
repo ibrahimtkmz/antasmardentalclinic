@@ -1,5 +1,6 @@
 import './globals.css';
 import WhatsAppButton from './components/WhatsAppButton';
+import { LanguageProvider } from './components/LanguageProvider';
 
 export const metadata = {
   title: 'Anastamar Dental Clinic',
@@ -10,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}<WhatsAppButton /></body>
+      <body><LanguageProvider>{children}<WhatsAppButton /></LanguageProvider></body>
     </html>
   );
 }

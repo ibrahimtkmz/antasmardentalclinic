@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { LANGUAGES, useLanguage } from './LanguageProvider';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t, language, changeLanguage } = useLanguage();
 
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
 
@@ -26,11 +28,11 @@ export default function Header() {
         </div>
 
         <nav className="hidden flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] md:flex lg:text-base">
-          <a href="/" className="transition hover:text-[#16b3a7]">Home</a>
-          <a href="/about-us" className="transition hover:text-[#16b3a7]">About Us</a>
+          <a href="/" className="transition hover:text-[#16b3a7]">{t.navHome}</a>
+          <a href="/about-us" className="transition hover:text-[#16b3a7]">{t.navAbout}</a>
 
           <div className="group relative">
-            <a href="/treatments" className="transition hover:text-[#16b3a7]">Treatments +</a>
+            <a href="/treatments" className="transition hover:text-[#16b3a7]">{t.navTreatments} +</a>
             <div className="invisible absolute left-1/2 top-full z-30 mt-3 w-52 -translate-x-1/2 rounded-2xl border border-[#d8efec] bg-white p-2 opacity-0 shadow-lg transition duration-200 group-hover:visible group-hover:opacity-100">
               <a href="/treatments/hollywood-smile" className="block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">Hollywood Smile</a>
               <a href="/treatments/dental-implant" className="mt-1 block rounded-xl px-3 py-2 text-xs font-semibold text-[#1a4743] transition hover:bg-[#eaf9f7] hover:text-[#0f8b80] md:text-sm">Dental Implant</a>
@@ -41,12 +43,26 @@ export default function Header() {
             </div>
           </div>
 
-          <a href="/doctors" className="transition hover:text-[#16b3a7]">Doctors +</a>
-          <a href="/contact" className="transition hover:text-[#16b3a7]">Contact</a>
+          <a href="/doctors" className="transition hover:text-[#16b3a7]">{t.navDoctors} +</a>
+          <a href="/contact" className="transition hover:text-[#16b3a7]">{t.navContact}</a>
         </nav>
 
+        
+        <div className="hidden items-center gap-2 md:flex">
+          {LANGUAGES.map((lang) => (
+            <button
+              key={lang.code}
+              type="button"
+              onClick={() => changeLanguage(lang.code)}
+              className={`rounded-full border px-3 py-1 text-xs font-bold ${language === lang.code ? 'border-[#16b3a7] bg-[#16b3a7] text-white' : 'border-[#b7d8d4] text-[#1a4743]'}`}
+            >
+              {lang.icon}
+            </button>
+          ))}
+        </div>
+
         <div className="hidden justify-center md:flex md:justify-end">
-          <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-[#16b3a7] px-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]">Book Appointment</a>
+          <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-[#16b3a7] px-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]">{t.book}</a>
         </div>
 
         <div className="flex items-center justify-end md:hidden">
@@ -68,9 +84,9 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="bg-transparent px-4 pb-6 pt-4 md:hidden">
           <nav className="flex flex-col gap-2 rounded-2xl border border-[#d9ecea] bg-white p-3 text-sm font-bold uppercase tracking-wide text-[#1a4743] shadow-sm">
-            <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Home</a>
-            <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">About Us</a>
-            <a href="/treatments" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Treatments</a>
+            <a href="/" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navHome}</a>
+            <a href="/about-us" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navAbout}</a>
+            <a href="/treatments" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navTreatments}</a>
             <div className="ml-3 flex flex-col gap-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#1f5f59]">
               <a href="/treatments/hollywood-smile" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Hollywood Smile</a>
               <a href="/treatments/dental-implant" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Dental Implant</a>
@@ -79,9 +95,15 @@ export default function Header() {
               <a href="/treatments/dental-bone-graft" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Dental Bone Graft</a>
               <a href="/treatments/sinus-lift" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 normal-case tracking-normal transition hover:bg-[#e8f7f5]">Sinus Lift</a>
             </div>
-            <a href="/doctors" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Doctors</a>
-            <a href="/contact" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">Contact</a>
+            <a href="/doctors" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navDoctors}</a>
+            <a href="/contact" onClick={closeMobileMenu} className="rounded-lg px-2 py-1 transition hover:bg-[#e8f7f5]">{t.navContact}</a>
           </nav>
+            <div className="mt-2 flex gap-2">
+              {LANGUAGES.map((lang) => (
+                <button key={lang.code} type="button" onClick={() => changeLanguage(lang.code)} className={`rounded-full border px-3 py-1 text-xs ${language === lang.code ? 'border-[#16b3a7] bg-[#16b3a7] text-white' : 'border-[#c8e3df] text-[#1a4743]'}`}>{lang.icon} {lang.code.toUpperCase()}</button>
+              ))}
+            </div>
+
         </div>
       )}
     </header>
