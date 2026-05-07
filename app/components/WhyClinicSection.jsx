@@ -13,7 +13,10 @@ const clinicVideos = [
 
 export default function WhyClinicSection() {
   const [activeVideo, setActiveVideo] = useState(null);
+  const [showMoreVideos, setShowMoreVideos] = useState(false);
   const { t } = useLanguage();
+
+  const visibleVideos = showMoreVideos ? clinicVideos.slice(0, 4) : clinicVideos.slice(0, 1);
 
   return (
     <>
@@ -50,7 +53,7 @@ export default function WhyClinicSection() {
         </div>
 
         <div className="grid grid-cols-2 gap-3 bg-[linear-gradient(180deg,#f8f8f8,#ebebeb)] p-4 sm:grid-cols-2 lg:grid-cols-2">
-          {clinicVideos.map((video) => (
+          {visibleVideos.map((video) => (
             <button
               key={video.src}
               type="button"
@@ -66,6 +69,18 @@ export default function WhyClinicSection() {
             </button>
           ))}
         </div>
+
+        {!showMoreVideos && (
+          <div className="col-span-2 px-4 pb-4">
+            <button
+              type="button"
+              onClick={() => setShowMoreVideos(true)}
+              className="w-full rounded-xl bg-[#22c5b6] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#16b3a7]"
+            >
+              Daha Fazla Göster
+            </button>
+          </div>
+        )}
       </section>
 
       {activeVideo && (
