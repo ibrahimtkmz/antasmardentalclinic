@@ -18,6 +18,9 @@ export const translations = {
     language: 'Language', aboutTitle: 'About us', aboutBreadcrumb: 'Home / About Us', contactTitle: 'We Are Here for You', contactLead: 'Fill out the form below, and our treatment consultants will contact you as soon as possible.',
     doctorsTitle: 'Our Doctors', doctorsLead: 'Review our doctors serving at our clinic and get detailed information about their specialties.', viewProfile: 'View detailed profile',
     treatmentsTitle: 'All Treatments', treatmentsLead: 'We have gathered all treatment pages in one place, fully aligned with the homepage design language. You can explore the treatment that best suits your needs on the detail pages.', viewDetails: 'View Details',
+    homeHeadline1: 'From Consultation to Perfection', homeHeadline2: 'Your Smile Journey Starts Here', homeLead: 'Anastamar Dental Clinic delivers advanced cosmetic dentistry, implants and smile makeovers in Istanbul with a trusted team and premium patient experience.',
+    formName: 'Enter your full name', formPhone: 'Enter your phone number', submitNow: 'Submit Now',
+    aboutHeading: 'About Us', getPrice: 'Get Price Now', freeConsultation: 'Free Consultation',
   },
   ru: {
     navHome: 'Главная', navAbout: 'О нас', navTreatments: 'Лечение', navDoctors: 'Врачи', navContact: 'Контакты', book: 'Записаться',
@@ -26,6 +29,9 @@ export const translations = {
     language: 'Язык', aboutTitle: 'О нас', aboutBreadcrumb: 'Главная / О нас', contactTitle: 'Мы здесь для вас', contactLead: 'Заполните форму ниже, и наши консультанты свяжутся с вами как можно скорее.',
     doctorsTitle: 'Наши врачи', doctorsLead: 'Ознакомьтесь с нашими врачами и получите подробную информацию об их специализации.', viewProfile: 'Посмотреть профиль',
     treatmentsTitle: 'Все процедуры', treatmentsLead: 'Мы собрали все страницы лечения в одном месте. Изучите детали и выберите подходящий вариант.', viewDetails: 'Подробнее',
+    homeHeadline1: 'От консультации к совершенству', homeHeadline2: 'Ваш путь к улыбке начинается здесь', homeLead: 'Клиника Anastamar в Стамбуле предлагает современную эстетическую стоматологию, имплантацию и преображение улыбки с надежной командой и премиальным сервисом.',
+    formName: 'Введите ваше полное имя', formPhone: 'Введите ваш номер телефона', submitNow: 'Отправить',
+    aboutHeading: 'О нас', getPrice: 'Узнать цену', freeConsultation: 'Бесплатная консультация',
   },
   uk: {
     navHome: 'Головна', navAbout: 'Про нас', navTreatments: 'Лікування', navDoctors: 'Лікарі', navContact: 'Контакти', book: 'Записатися',
@@ -34,6 +40,9 @@ export const translations = {
     language: 'Мова', aboutTitle: 'Про нас', aboutBreadcrumb: 'Головна / Про нас', contactTitle: 'Ми тут для вас', contactLead: 'Заповніть форму нижче, і наші консультанти звʼяжуться з вами якнайшвидше.',
     doctorsTitle: 'Наші лікарі', doctorsLead: 'Ознайомтеся з лікарями нашої клініки та дізнайтеся про їхні спеціалізації.', viewProfile: 'Переглянути профіль',
     treatmentsTitle: 'Усі процедури', treatmentsLead: 'Ми зібрали всі сторінки лікування в одному місці. Перегляньте деталі та оберіть найкращий варіант.', viewDetails: 'Детальніше',
+    homeHeadline1: 'Від консультації до досконалості', homeHeadline2: 'Ваш шлях до усмішки починається тут', homeLead: 'Клініка Anastamar у Стамбулі пропонує сучасну естетичну стоматологію, імплантацію та перетворення усмішки з надійною командою і преміальним сервісом.',
+    formName: 'Введіть ваше повне ім’я', formPhone: 'Введіть ваш номер телефону', submitNow: 'Надіслати',
+    aboutHeading: 'Про нас', getPrice: 'Дізнатися ціну', freeConsultation: 'Безкоштовна консультація',
   },
 };
 
