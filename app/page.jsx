@@ -178,7 +178,7 @@ export default function AnastamarDentalClinicHomepage() {
 
         <Header />
 
-        <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-20 text-white md:px-6">
+        <section className="relative z-10 page-shell flex min-h-[640px] flex-col justify-center px-4 pb-16 pt-3 text-white md:px-6 md:pt-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-black leading-tight md:text-7xl">
               {t.homeHeadline1}
