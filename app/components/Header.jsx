@@ -23,7 +23,7 @@ export default function Header() {
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-24 w-auto object-contain sm:h-28 md:h-20 lg:h-24"
+              className="h-14 w-auto origin-left scale-[1.7] object-contain sm:h-16 md:h-12 md:scale-[2] lg:h-14"
             />
           </a>
         </div>
@@ -50,7 +50,7 @@ export default function Header() {
 
         
         <div className="relative hidden items-center md:flex">
-          <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#b7d8d4] text-lg">🌐</button>
+          <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black text-lg">🌐</button>
           {languageOpen && (
             <div className="absolute right-0 top-12 z-40 min-w-36 rounded-xl border border-[#d8efec] bg-white p-1 shadow-lg">
               {LANGUAGES.map((lang) => (
@@ -65,7 +65,7 @@ export default function Header() {
         </div>
 
         <div className="-mt-1 mr-1 flex items-center md:hidden">
-          <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#b7d8d4] text-base">🌐</button>
+          <button type="button" aria-label={t.language} onClick={() => setLanguageOpen((prev) => !prev)} className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black text-base">🌐</button>
           {languageOpen && (
             <div className="absolute right-16 top-11 z-40 min-w-32 rounded-xl border border-[#d8efec] bg-white p-1 shadow-lg">
               {LANGUAGES.map((lang) => (
