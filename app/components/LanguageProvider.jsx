@@ -5,12 +5,24 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 const LanguageContext = createContext();
 
 export const LANGUAGES = [
+  { code: 'tr', label: 'Türkçe', icon: '🇹🇷' },
   { code: 'en', label: 'English', icon: '🇬🇧' },
   { code: 'ru', label: 'Русский', icon: '🇷🇺' },
   { code: 'uk', label: 'Українська', icon: '🇺🇦' },
 ];
 
 export const translations = {
+  tr: {
+    navHome: 'Ana Sayfa', navAbout: 'Hakkımızda', navTreatments: 'Tedaviler', navDoctors: 'Doktorlar', navContact: 'İletişim', book: 'Randevu Al',
+    why: 'Neden', clinic: 'Anastamar Clinic', playVideo: 'Videoyu Oynat', close: 'Kapat', learnMore: 'Daha Fazla', expYears: 'Yıllık Deneyim', happyPatients: 'Mutlu Hasta',
+    footerQuick: 'Hızlı Linkler', footerServices: 'Popüler Hizmetler', footerOffer: 'Yurt dışından teklif almak isteyen hastalarımız WhatsApp üzerinden hızlı yanıt alabilir.',
+    language: 'Dil', aboutTitle: 'Hakkımızda', aboutBreadcrumb: 'Ana Sayfa / Hakkımızda', contactTitle: 'Sizin İçin Buradayız', contactLead: 'Aşağıdaki formu doldurun, tedavi danışmanlarımız en kısa sürede sizinle iletişime geçsin.',
+    doctorsTitle: 'Doktorlarımız', doctorsLead: 'Kliniğimizde hizmet veren doktorlarımızı inceleyin ve uzmanlık alanları hakkında detaylı bilgi alın.', viewProfile: 'Detaylı profili görüntüle',
+    treatmentsTitle: 'Tüm Tedaviler', treatmentsLead: 'Tüm tedavi sayfalarını tek bir yerde topladık. Detay sayfalarından size en uygun tedaviyi keşfedebilirsiniz.', viewDetails: 'Detayları Görüntüle',
+    homeHeadline1: 'Danışmadan Mükemmelliğe', homeHeadline2: 'Gülüş Yolculuğunuz Burada Başlıyor', homeLead: 'Anastamar Dental Clinic, İstanbul’da ileri estetik diş hekimliği, implant ve gülüş tasarımı hizmetlerini güvenilir ekip ve premium hasta deneyimiyle sunar.',
+    formName: 'Ad soyadınızı girin', formPhone: 'Telefon numaranızı girin', submitNow: 'Şimdi Gönder',
+    aboutHeading: 'Hakkımızda', getPrice: 'Hemen Fiyat Al', freeConsultation: 'Ücretsiz Danışmanlık',
+  },
   en: {
     navHome: 'Home', navAbout: 'About Us', navTreatments: 'Treatments', navDoctors: 'Doctors', navContact: 'Contact', book: 'Book Appointment',
     why: 'Why', clinic: 'Anastamar Clinic', playVideo: 'Play Video', close: 'Close', learnMore: 'Learn More', expYears: 'Experience Years', happyPatients: 'Happy Patients',
@@ -47,12 +59,38 @@ export const translations = {
 };
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('tr');
 
   useEffect(() => {
     const stored = window.localStorage.getItem('site-language');
     if (stored && translations[stored]) setLanguage(stored);
   }, []);
+
+  useEffect(() => {
+    const translateTo = (target) => {
+      const combo = document.querySelector('.goog-te-combo');
+      if (!combo) return false;
+      combo.value = target;
+      combo.dispatchEvent(new Event('change'));
+      return true;
+    };
+
+    document.documentElement.lang = language;
+    const targetLang = language === 'tr' ? 'tr' : language;
+
+    if (language === 'tr') {
+      document.cookie = 'googtrans=/tr/tr;path=/';
+    } else {
+      document.cookie = `googtrans=/tr/${targetLang};path=/`;
+    }
+
+    if (!translateTo(targetLang)) {
+      const timer = window.setInterval(() => {
+        if (translateTo(targetLang)) window.clearInterval(timer);
+      }, 300);
+      window.setTimeout(() => window.clearInterval(timer), 6000);
+    }
+  }, [language]);
 
   const changeLanguage = (code) => {
     setLanguage(code);
