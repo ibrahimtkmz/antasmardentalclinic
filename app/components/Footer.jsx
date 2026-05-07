@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-2 max-w-md text-sm leading-relaxed text-[#9ec8c4] sm:text-base md:text-[21px]">
-              Our patients who want to get an offer from abroad can get a quick response via WhatsApp.
+              {t.footerOffer}
             </p>
 
             <div className="mt-4 space-y-2 text-sm text-[#8db7b3] sm:text-base md:mt-6 md:space-y-4 md:text-[20px]">

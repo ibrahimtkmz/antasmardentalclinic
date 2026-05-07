@@ -1,9 +1,9 @@
+'use client';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 
-export const metadata = {
-  title: 'About Us | Anastamar Dental Clinic',
-};
 
 const principleCards = [
   {
@@ -21,13 +21,15 @@ const principleCards = [
 ];
 
 export default function AboutUsPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="sharp-theme min-h-screen bg-[#f3fffd] text-[#173a36]">
       <Header />
       <main className="page-shell space-y-8 px-3 pb-14 pt-8 md:px-6">
         <section className="rounded-[22px] bg-gradient-to-br from-[#0f6f68] to-[#1aa69b] px-6 py-14 text-center text-white shadow-lg md:py-16">
-          <h1 className="text-4xl font-black md:text-6xl">About us</h1>
-          <p className="mt-4 text-sm text-white/90 md:text-base">Home / About Us</p>
+          <h1 className="text-4xl font-black md:text-6xl">{t.aboutTitle}</h1>
+          <p className="mt-4 text-sm text-white/90 md:text-base">{t.aboutBreadcrumb}</p>
         </section>
 
         <section className="grid gap-6 rounded-[22px] bg-white p-5 shadow-lg md:grid-cols-2 md:p-8">

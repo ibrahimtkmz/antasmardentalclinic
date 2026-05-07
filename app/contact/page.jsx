@@ -1,5 +1,8 @@
+'use client';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 
 const featureCards = [
   {
@@ -20,6 +23,8 @@ const featureCards = [
 ];
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#173a36]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
@@ -31,8 +36,8 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2">
             <div className="p-7 md:p-10">
               <p className="inline-flex rounded-md bg-[#d8f7f3] px-3 py-1 text-sm font-semibold text-[#0f8b80]">Anastamar Contact</p>
-              <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">We Are Here for You</h1>
-              <p className="mt-4 text-base text-[#456863] md:text-lg">Fill out the form below, and our treatment consultants will contact you as soon as possible.</p>
+              <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">{t.contactTitle}</h1>
+              <p className="mt-4 text-base text-[#456863] md:text-lg">{t.contactLead}</p>
 
               <form className="mt-8 space-y-4">
                 <input

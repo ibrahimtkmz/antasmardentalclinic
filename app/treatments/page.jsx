@@ -1,12 +1,14 @@
+'use client';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 import { treatments } from '../data/treatments';
 
-export const metadata = {
-  title: 'Treatments | Anastamar Dental Clinic',
-};
 
 export default function TreatmentsPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#e7fffb]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
@@ -15,10 +17,9 @@ export default function TreatmentsPage() {
           <p className="inline-flex rounded-full border border-[#89fff3]/40 bg-[#0ea79a]/30 px-4 py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#a7fff6]">
             Anastamar Treatment Portfolio
           </p>
-          <h1 className="mt-4 text-4xl font-black md:text-6xl">All Treatments</h1>
+          <h1 className="mt-4 text-4xl font-black md:text-6xl">{t.treatmentsTitle}</h1>
           <p className="mt-4 max-w-3xl text-lg text-white/85">
-            We have gathered all treatment pages in one place, fully aligned with the homepage design language.
-            You can explore the treatment that best suits your needs on the detail pages.
+            {t.treatmentsLead}
           </p>
         </section>
       </div>
@@ -36,7 +37,7 @@ export default function TreatmentsPage() {
                   href={`/treatments/${item.slug}`}
                   className="mt-5 inline-flex rounded-full bg-[#5fe2d6] px-5 py-2 text-sm font-bold text-[#083a36]"
                 >
-                  View Details
+                  {t.viewDetails}
                 </a>
               </div>
             </article>

@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useLanguage } from '../components/LanguageProvider';
 
 const doctors = [
   {
@@ -18,14 +21,16 @@ const doctors = [
 ];
 
 export default function DoctorsPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="sharp-theme min-h-screen bg-[#111111] text-[#173a36]">
       <div className="bg-[radial-gradient(circle_at_top,#22c5b6_0%,#0f8b80_32%,#141414_76%)] pb-16">
         <Header />
         <section className="page-shell mt-10 px-4 text-white md:px-6">
-          <h1 className="text-4xl font-black md:text-6xl">Doktorlarımız</h1>
+          <h1 className="text-4xl font-black md:text-6xl">{t.doctorsTitle}</h1>
           <p className="mt-4 max-w-2xl text-base text-white/85 md:text-lg">
-            Kliniğimizde hizmet veren hekimlerimizi inceleyin ve uzmanlık alanları hakkında detaylı bilgi alın.
+            {t.doctorsLead}
           </p>
         </section>
       </div>
@@ -43,7 +48,7 @@ export default function DoctorsPage() {
                 </div>
                 <div className="mt-5 text-2xl font-bold text-[#222]">{doctor.name}</div>
                 <div className="text-[#666]">{doctor.role}</div>
-                <div className="mt-4 text-sm font-semibold text-[#0f8b80]">Detaylı profili görüntüle</div>
+                <div className="mt-4 text-sm font-semibold text-[#0f8b80]">{t.viewProfile}</div>
               </Link>
             ))}
           </div>
