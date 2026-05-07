@@ -16,19 +16,19 @@ export default function Header() {
     <header
       className="page-shell sticky top-0 z-50 mt-0 bg-transparent transition-colors md:rounded-[0_0_26px_26px] md:border md:border-[#d9ecea] md:bg-[#f7fffe] md:shadow-[0_14px_36px_rgba(8,41,38,0.12)]"
     >
-      <div className="flex items-center justify-between gap-3 px-5 py-4 md:grid md:grid-cols-[190px_1fr_220px] lg:grid-cols-[220px_1fr_260px] md:gap-5 md:rounded-none md:bg-transparent md:px-6 md:py-6">
+      <div className="flex items-center justify-between gap-3 px-5 py-4 md:grid md:grid-cols-[380px_1fr_120px] lg:grid-cols-[440px_1fr_140px] md:gap-5 md:rounded-none md:bg-transparent md:px-6 md:py-6">
 
         <div className="relative flex h-auto items-center justify-start md:h-20 md:justify-start">
           <a href="/" className="relative block md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/Anastamar.Dental.Clinic.png"
               alt="Anastamar Dental Clinic Logo"
-              className="h-10 w-auto object-contain sm:h-12 md:h-16 lg:h-20"
+              className="h-10 w-auto object-contain sm:h-12 md:h-32 lg:h-40"
             />
           </a>
         </div>
 
-        <nav className="hidden items-center justify-center gap-x-5 text-[13px] whitespace-nowrap font-bold uppercase tracking-wide text-[#1a4743] md:flex lg:text-sm">
+        <nav className="hidden items-center justify-center gap-x-2.5 text-[6.5px] whitespace-nowrap font-bold uppercase tracking-wide text-[#1a4743] md:flex lg:text-[7px]">
           <a href="/" className="transition hover:text-[#16b3a7]">{t.navHome}</a>
           <a href="/about-us" className="transition hover:text-[#16b3a7]">{t.navAbout}</a>
 
@@ -61,7 +61,7 @@ export default function Header() {
         </div>
 
         <div className="hidden justify-center md:flex md:justify-end">
-          <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-full bg-[#16b3a7] px-5 text-xs lg:px-7 lg:text-sm font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]">{t.book}</a>
+          <a href="/contact" className="inline-flex h-6 items-center justify-center rounded-full bg-[#16b3a7] px-2.5 text-[10px] lg:px-3.5 lg:text-xs font-extrabold uppercase tracking-[0.12em] text-white shadow-[0_12px_24px_rgba(12,96,90,0.28)] transition hover:bg-[#12998e]">{t.book}</a>
         </div>
 
         <div className="flex items-center justify-end md:hidden">
