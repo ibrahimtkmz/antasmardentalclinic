@@ -1,3 +1,7 @@
+'use client';
+
+import { useLanguage } from './LanguageProvider';
+
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about-us' },
@@ -16,6 +20,7 @@ const services = [
 ];
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="mt-8 border-t border-white/10 bg-[#031416] footer-hex-pattern text-[#9cc9c5] overflow-hidden sm:mt-10">
       <div className="page-shell px-6 py-10 md:px-8 md:py-14 lg:py-20">
@@ -43,9 +48,9 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 gap-6 text-left lg:contents">
-          {/* Quick Links Column */}
+          {/* {t.footerQuick} Column */}
           <div className="mx-auto w-full max-w-[180px] lg:mx-0 lg:max-w-none">
-            <h3 className="text-2xl font-bold text-white md:text-3xl">Quick Links</h3>
+            <h3 className="text-2xl font-bold text-white md:text-3xl">{t.footerQuick}</h3>
             <div className="mt-3 h-1 w-16 rounded bg-[#5fe2d6] md:mt-4 md:w-24" />
             <ul className="mt-4 space-y-2 text-sm sm:text-base md:mt-8 md:space-y-5 md:text-[22px]">
               {quickLinks.map((item) => (
@@ -58,7 +63,7 @@ export default function Footer() {
 
           {/* Services Column */}
           <div className="mx-auto w-full max-w-[180px] lg:mx-0 lg:max-w-none">
-            <h3 className="text-2xl font-bold text-white md:text-3xl">Popular Services</h3>
+            <h3 className="text-2xl font-bold text-white md:text-3xl">{t.footerServices}</h3>
             <div className="mt-3 h-1 w-16 rounded bg-[#5fe2d6] md:mt-4 md:w-24" />
             <ul className="mt-4 space-y-2 text-sm sm:text-base md:mt-8 md:space-y-4 md:text-[21px]">
               {services.map((item) => (
