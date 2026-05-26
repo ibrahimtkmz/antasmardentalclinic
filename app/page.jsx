@@ -491,7 +491,7 @@ export default function AnastamarDentalClinicHomepage() {
               </select>
               <div className="grid grid-cols-[110px_1fr] overflow-hidden rounded-2xl border border-[#c7e1de] bg-[#f1f8f7]">
                 <div className="grid place-items-center border-r border-[#c7e1de] text-[#111827]">🇹🇷 +90</div>
-                <input className="h-14 bg-transparent px-5 text-[#111827] outline-none" placeholder="0501 234 56 78" />
+                <input className="h-14 bg-transparent px-5 text-[#111827] outline-none" placeholder="0545 910 31 97" />
               </div>
               <select className="h-14 w-full rounded-2xl border border-[#c7e1de] bg-[#f1f8f7] px-5 text-[#6d8b87] outline-none">
                 <option>Select Service</option>
@@ -503,15 +503,20 @@ export default function AnastamarDentalClinicHomepage() {
               </button>
             </div>
 
+            <div className="mt-6 space-y-2 rounded-2xl border border-[#c7e1de] bg-white/70 p-4 text-[#23403d]">
+              <p><span className="font-semibold">Adres:</span> Kazlıçeşme, Kennedy Cad. NO: 54 EA, 34020 Zeytinburnu/İstanbul</p>
+              <p><span className="font-semibold">İletişim / WhatsApp:</span> +90 545 910 31 97</p>
+            </div>
+
             <div className="mt-8 flex items-center gap-5 text-[#4c6662]">
               <span className="h-px flex-1 bg-[#c4e3df]" />
               <span className="text-sm">or reach us through</span>
               <span className="h-px flex-1 bg-[#c4e3df]" />
             </div>
             <div className="mt-5 flex gap-3">
-              <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">📞</button>
+              <a href="tel:+905459103197" className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">📞</a>
               <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">✉️</button>
-              <button className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">🟢</button>
+              <a href="https://wa.me/905459103197" target="_blank" rel="noopener noreferrer" className="grid h-12 w-12 place-items-center rounded-full bg-white text-xl">🟢</a>
             </div>
           </div>
 

@@ -39,6 +39,12 @@ export default function ContactPage() {
               <h1 className="mt-5 text-4xl font-black leading-tight text-[#123f3a] md:text-5xl">{t.contactTitle}</h1>
               <p className="mt-4 text-base text-[#456863] md:text-lg">{t.contactLead}</p>
 
+              <div className="mt-6 space-y-2 rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] p-4 text-sm text-[#123f3a] md:text-base">
+                <p><span className="font-semibold">Adres:</span> Kazlıçeşme, Kennedy Cad. NO: 54 EA, 34020 Zeytinburnu/İstanbul</p>
+                <p><span className="font-semibold">Telefon & WhatsApp:</span> +90 545 910 31 97</p>
+              </div>
+
+
               <form className="mt-8 space-y-4">
                 <input
                   className="h-14 w-full rounded-2xl border border-[#cde5e1] bg-[#f3fbf9] px-5 text-[#123f3a] outline-none placeholder:text-[#5f7f7b]"
@@ -70,7 +76,7 @@ export default function ContactPage() {
             <div className="min-h-[520px] border-t border-[#d7eeeb] bg-[#e8f4f2] lg:border-l lg:border-t-0">
               <iframe
                 title="Anastamar Clinic Map"
-                src="https://maps.google.com/maps?q=Kadikoy%20Istanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Kazl%C4%B1%C3%A7e%C5%9Fme%2C%20Kennedy%20Cad.%20NO%3A%2054%20EA%2C%2034020%20Zeytinburnu%2F%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="h-full min-h-[520px] w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -107,7 +113,7 @@ export default function ContactPage() {
             Take the first step toward solving your dental health concerns today.
             </h3>
           <a
-            href="https://wa.me/905555555555"
+            href="https://wa.me/905459103197"
             className="inline-flex h-14 items-center rounded-xl bg-[#0f8b80] px-8 text-lg font-bold text-white transition hover:bg-[#0a7067]"
           >
             WhatsApp

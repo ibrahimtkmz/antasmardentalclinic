@@ -41,9 +41,9 @@ export default function Footer() {
             </p>
 
             <div className="mt-4 space-y-2 text-sm text-[#8db7b3] sm:text-base md:mt-6 md:space-y-4 md:text-[20px]">
-              <div className="flex items-center gap-3"><span>📍</span> Bakirkoy - Istanbul</div>
+              <div className="flex items-center gap-3"><span>📍</span> Kazlıçeşme, Kennedy Cad. NO: 54 EA, 34020 Zeytinburnu/İstanbul</div>
               <div className="flex items-center gap-3"><span>✉️</span> hello@anastamarsmile.com</div>
-              <div className="flex items-center gap-3"><span>📞</span> +90 555 321 67 89</div>
+              <div className="flex items-center gap-3"><span>📞</span> +90 545 910 31 97</div>
             </div>
           </div>
 
