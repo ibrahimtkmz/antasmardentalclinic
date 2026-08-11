@@ -10,7 +10,7 @@ export const metadata = {
     'Anastamar Dental Clinic Istanbul - Premium smile design, implants, veneers and modern cosmetic dentistry solutions.',
 };
 
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 export default function RootLayout({ children }) {
   const pageContent = MAINTENANCE_MODE ? <MaintenanceNotice /> : children;
